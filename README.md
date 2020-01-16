@@ -1,4 +1,4 @@
-# Schéma de la Protection Juridique des Majeurs (PJM)
+# Schéma de données de la Protection Juridique des Majeurs (PJM)
 
 ## Liste des données des tables de référence
 
