@@ -1,6 +1,6 @@
 id,description
-etablissement_handicapes,Etablissement ou service pour handicapés
-etablissement_personne_agee,Etablissement pour personnes agées
-etablissement_s_ms,Etablissement social ou médico-social
-etablissement_hospitalier,Etablissement hospitalier
-etablissement_psychiatrique,Etablissement psychiatrique
+etablissement_handicapes,établissement ou service pour handicapés
+etablissement_personne_agee,établissement pour personnes agées
+autre_etablissement_s_ms,autre établissement social ou médico-social
+etablissement_hospitalier,établissement hospitalier
+etablissement_psychiatrique,établissement psychiatrique

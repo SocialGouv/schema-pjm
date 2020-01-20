@@ -1,10 +1,10 @@
 id,description
-curatelle_simple,Curatelle simple
-curatelle_renforcee,Curatelle renforcée
-tutelle,Tutelle
-sauvegarde_justice,Sauvegarde justice avec mandat spécial
-maj,Mesure d'accompagnement judiciaire
-subroge_curateur,Subrogé curateur
-subroge_tuteur,Subrogé tuteur
-mandat_protection_future,Mandat protection future
-mesure_ad_hoc,Mesure ad hoc
+curatelle_simple,curatelle simple
+curatelle_renforcee,curatelle renforcée
+tutelle,tutelle
+sauvegarde_justice,sauvegarde justice avec mandat spécial
+maj,mesure d'accompagnement judiciaire
+subroge_curateur,subrogé curateur
+subroge_tuteur,subrogé tuteur
+mandat_protection_future,mandat protection future
+mesure_ad_hoc,mesure ad hoc

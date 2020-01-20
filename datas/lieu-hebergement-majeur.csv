@@ -1,4 +1,4 @@
 id,description
-domicile,Domicile
-etablissement,Etablissement
-etablissement_conservation_domicile,Etablissement avec conservation domicile
+domicile,domicile
+etablissement,établissement
+etablissement_conservation_domicile,établissement avec conservation domicile
