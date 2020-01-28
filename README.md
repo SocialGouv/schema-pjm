@@ -3,7 +3,7 @@
 ## Liste des données des tables de référence
 
 - [Aides sociales](./datas/aide-sociale.csv)
-- [Causes de sortie de dispositif](./datas/cause-sortie-dispositif.csv)
+- [Causes de sortie de dispositif](./datas/cause-sortie.csv)
 - [Champs de la mesure](./datas/champs-mesure.csv)
 - [Fédérations des services mandataires](./datas/federation-service.csv)
 - [Lieux d'exercice d'un MJPM](./datas/lieu-exercice-mjpm.csv)
