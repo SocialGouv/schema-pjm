@@ -1,0 +1,137 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Mandataire individuel",
+  "description": "Spécification des données d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/mandataire-individuel.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "num_siret",
+      "description": "Numéro SIRET du mandataire individuel (14 chiffres).",
+      "example": "80295478500028",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\d{14}$"
+      }
+    },
+    {
+      "name": "sexe",
+      "description": "Sexe du mandataire individuel",
+      "example": "H",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["H", "F"]
+      }
+    },
+    {
+      "name": "nom_naissance",
+      "description": "Nom de naissance du mandataire individuel",
+      "example": "Dupont",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nom_usage",
+      "description": "Nom d'usage du mandataire individuel",
+      "example": "Dupont",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "prenom",
+      "description": "Prénom d'usage du mandataire individuel",
+      "example": "Thomas",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "adresse",
+      "description": "L'adresse du lieu de travail du mandataire individuel",
+      "example": "14 Avenue Duquesne",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "code_postal",
+      "description": "Code postal du lieu de travail du mandataire individuel",
+      "example": "75350",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\d{5}$"
+      }
+    },
+    {
+      "name": "Ville",
+      "description": "Ville du lieu de travail du mandataire individuel",
+      "example": "Paris",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "telephone_bureau",
+      "description": "Numéro de téléphone du bureau du mandataire individuel",
+      "example": "01 40 56 60 00",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\0d{1} d{2} d{2} d{2} d{2}$"
+      }
+    },
+    {
+      "name": "telephone_mobile",
+      "description": "Numéro de téléphone mobile du mandataire individuel",
+      "example": "06 60 56 60 00",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "pattern": "^\\0d{1} d{2} d{2} d{2} d{2}$"
+      }
+    }
+  ],
+  "custom_checks": [
+    {
+      "name": "french-siret-value",
+      "params": {
+        "column": "num_siret"
+      }
+    }
+  ],
+  "missingValues": [""],
+  "primaryKey": "num_siret"
+}
