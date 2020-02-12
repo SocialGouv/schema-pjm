@@ -17,6 +17,7 @@
 ## Schéma de données
 
 - [Mandataire individuel](./schemas/mandataire_individuel.json)
+- [Service mandataire](./schemas/service_mandataire.json)
 
 
 
