@@ -2,6 +2,7 @@
 
 ## Liste des données des tables de référence
 
+- [Sexe](./datas/sexe.csv)
 - [Aides sociales](./datas/aide-sociale.csv)
 - [Causes de sortie de dispositif](./datas/cause-sortie-dispositif.csv)
 - [Champs de la mesure](./datas/champs-mesure.csv)
@@ -12,4 +13,13 @@
 - [Organismes gestionnaires](./datas/organisme-gestionnaire.csv)
 - [Résultats d'une révision d'une mesure](./datas/resultat-revision-mesure.csv)
 - [Types d'établissement](./datas/type-etablissement.csv)
+
+## Schéma de données
+
+### Mandataire individuel (MI)
+
+|nom de la colonne | description | type                 | Obligatoire   | contrainte                                    |
+|------------------|-------------|----------------------|---------------|-----------------------------------------------|
+|sexe              | Sexe du MI  | Chaine de caractère  | Oui           | Valeurs autorisées [Sexe](./datas/sexe.csv)   |
+
 
