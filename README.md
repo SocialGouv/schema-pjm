@@ -16,20 +16,8 @@
 
 ## Schéma de données
 
-### Mandataire individuel (MI)
+- [Mandataire individuel](./schemas/mandataire-individuel.json)
 
-|nom de la colonne  | description   | type                      | Obligatoire   | contrainte                                      |
-|------------------ |---------------|---------------------------|---------------|-------------------------------------------------|
-|sexe               | Sexe              | Chaine de caractère   | Oui           | Valeurs de `id` dans [Sexe](./datas/sexe.csv)   |
-|nom_naissance      | Nom de naissance  | Chaine de caractère   | Oui           |  |
-|nom_usage          | Nom d'usage       | Chaine de caractère   | Oui           |  |
-|prenom             | Prénom            | Chaine de caractère   | Oui           |  |
-|adresse            | Adresse           | Chaine de caractère   | Oui           |  |
-|code_postal        | Code postal       | Chaine de caractère   | Oui           | regexp: `` | 
-|ville              | Ville             | Chaine de caractère   | Oui           |  | 
-|telephone_bureau   | Num. tél. pro.    | Chaine de caractère   | Oui           | regexp: `` | 
-|telephone_portable | Num. tél. mobile  | Chaine de caractère   | Non           | regexp: `` | 
-|email              | Email             | Chaine de caractère   | Oui           | format: `email` | 
 
 
 
