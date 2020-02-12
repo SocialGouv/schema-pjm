@@ -5,7 +5,7 @@
   "keywords": ["mandataire", "individuel"],
   "countryCode": "FR",
   "homepage": "https://github.com/SocialGouv/schema-pjm",
-  "path": "https://github.com/SocialGouv/schema-pjm/mandataire-individuel.json",
+  "path": "https://github.com/SocialGouv/schema-pjm/mandataire_individuel.json",
   "licenses": [
     {
       "title": "Licence Ouverte",
@@ -29,13 +29,32 @@
   "contact": "",
   "fields": [
     {
+      "name": "id",
+      "description": "Identifiant unique du mandataire individuel dans eMJPM",
+      "example": "134",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
       "name": "num_siret",
-      "description": "Numéro SIRET du mandataire individuel (14 chiffres).",
+      "description": "Numéro SIRET du mandataire individuel (14 chiffres)",
       "example": "80295478500028",
       "type": "string",
       "constraints": {
         "required": true,
         "pattern": "^\\d{14}$"
+      }
+    },
+    {
+      "name": "email",
+      "description": "Email du mandataire individuel",
+      "example": "mandataire@monmail.com",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "format": "email"
       }
     },
     {
@@ -133,5 +152,5 @@
     }
   ],
   "missingValues": [""],
-  "primaryKey": "num_siret"
+  "primaryKey": "id"
 }

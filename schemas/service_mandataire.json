@@ -1,0 +1,178 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Mandataire individuel",
+  "description": "Spécification des données d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/service_mandataire.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "id",
+      "description": "Identifiant unique du service mandataire dans eMJPM",
+      "example": "134",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "num_siret",
+      "description": "Numéro SIRET du service mandataire (14 chiffres).",
+      "example": "80295478500028",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\d{14}$"
+      }
+    },
+    {
+      "name": "nom_service",
+      "description": "Nom du service mandataire",
+      "example": "ATPFO 75",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "adresse",
+      "description": "L'adresse du siège social du service mandataire",
+      "example": "14 Avenue Duquesne",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "code_postal",
+      "description": "Code postal du siège social du service mandataire",
+      "example": "75350",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\d{5}$"
+      }
+    },
+    {
+      "name": "Ville",
+      "description": "Ville du siège social du service mandataire",
+      "example": "Paris",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "telephone",
+      "description": "Numéro de téléphone du siège social du service mandataire",
+      "example": "01 40 56 60 00",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\0d{1} d{2} d{2} d{2} d{2}$"
+      }
+    },
+    {
+      "name": "email",
+      "description": "Email du service mandataire",
+      "example": "mandataire@monmail.com",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "format": "email"
+      }
+    },
+    {
+      "name": "responsable_service",
+      "description": "Personne habilitée à représenter le service mandataire",
+      "example": "Victoria Dupont",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "annee_creation",
+      "description": "Année de création du service mandataire",
+      "example": "2009",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "minimum": 1950,
+        "maximum": 2020
+      }
+    },
+    {
+      "name": "convention_collective",
+      "description": "Convention Nationale Collective de Travail",
+      "example": "",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "organisme_gestionnaire",
+      "description": "Type d'organisme gestionnaire",
+      "example": "",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["association", "ccas", "organisme_securite_sociale"]
+      }
+    },
+    {
+      "name": "affiliation_federation",
+      "description": "Affiliation à une fédération",
+      "example": "",
+      "type": "boolean",
+      "trueValues": ["1"],
+      "falseValues": ["0"],
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "federation",
+      "description": "Si affilier à une fédération",
+      "example": "",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["unaf", "unapei", "fnat", "autre_federation"]
+      }
+    }
+  ],
+  "custom_checks": [
+    {
+      "name": "french-siret-value",
+      "params": {
+        "column": "num_siret"
+      }
+    }
+  ],
+  "missingValues": [""],
+  "primaryKey": "id"
+}
