@@ -18,8 +18,6 @@
 
 ### Mandataire individuel
 
-https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel.json
-
 |nom|type|description|format|enum|
 |-|-|-|-|-|
 |id|integer|Identifiant unique du mandataire individuel dans eMJPM<br>**example**: 134|||
@@ -36,8 +34,6 @@ https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel.json
 |telephone_mobile|string|Numéro de téléphone mobile du mandataire individuel<br>**example**: 06 60 56 60 00|`^\0d{1} d{2} d{2} d{2} d{2}$`||
 
 ### Service mandataire
-
-https://github.com/SocialGouv/schema-pjm/schemas/service_mandataire.json
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
