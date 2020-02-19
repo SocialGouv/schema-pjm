@@ -18,7 +18,7 @@
 
 ### Mandataire individuel
 
-https://github.com/SocialGouv/schema-pjm/mandataire_individuel.json
+https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel.json
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
@@ -37,7 +37,7 @@ https://github.com/SocialGouv/schema-pjm/mandataire_individuel.json
 
 ### Service mandataire
 
-https://github.com/SocialGouv/schema-pjm/service_mandataire.json
+https://github.com/SocialGouv/schema-pjm/schemas/service_mandataire.json
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|

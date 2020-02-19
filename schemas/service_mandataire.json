@@ -5,7 +5,7 @@
   "keywords": ["mandataire", "individuel"],
   "countryCode": "FR",
   "homepage": "https://github.com/SocialGouv/schema-pjm",
-  "path": "https://github.com/SocialGouv/schema-pjm/service_mandataire.json",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/service_mandataire.json",
   "licenses": [
     {
       "title": "Licence Ouverte",
