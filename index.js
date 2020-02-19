@@ -60,7 +60,7 @@ function generateMarkdown(jsonPath, logger) {
       descriptionCell = descriptionCell + `<br>**example**: ${example}`;
     }
 
-    let formatCell = `\`${pattern}\``;
+    let formatCell = pattern ? `\`${pattern}\`` : "";
 
     const enumCell = enumValues ? enumValues.join("<br>") : "";
 
