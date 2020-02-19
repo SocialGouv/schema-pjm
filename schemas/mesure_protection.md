@@ -4,8 +4,8 @@
 |-|-|-|-|-|
 |id|integer|Identifiant unique emjpm de la mesure de protection|||
 |nom_naissance|string|Nom de naissance du majeur protégé|||
-|nom_usage|string|Nom d'usage du majeur protégé'|||
-|prenom|string|Prénom du majeur protégé'|||
+|nom_usage|string|Nom d'usage du majeur protégé|||
+|prenom|string|Prénom du majeur protégé|||
 |date_naissance|date|Date de naissance du majeur protégé<br>**example**: 22/05/1938|||
 |sexe|string|Sexe du majeur protégé||H<br>F|
 |date_jugement|date|Date de jugement de la mesure de protection<br>**example**: 01/02/2020|||

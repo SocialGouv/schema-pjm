@@ -46,7 +46,7 @@
     },
     {
       "name": "nom_usage",
-      "description": "Nom d'usage du majeur protégé'",
+      "description": "Nom d'usage du majeur protégé",
       "type": "string",
       "constraints": {
         "required": false
@@ -54,7 +54,7 @@
     },
     {
       "name": "prenom",
-      "description": "Prénom du majeur protégé'",
+      "description": "Prénom du majeur protégé",
       "type": "string",
       "constraints": {
         "required": false
