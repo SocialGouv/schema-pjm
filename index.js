@@ -35,6 +35,10 @@ function generateMarkdown(jsonPath, logger) {
   logger.write(`### ${json.title}`);
   logger.write(NEW_LINE);
   logger.write(NEW_LINE);
+  const path = json.path;
+  logger.write(path);
+  logger.write(NEW_LINE);
+  logger.write(NEW_LINE);
 
   const header = "|nom|type|description|format|enum|";
   const subHeader = "|-|-|-|-|-|";
