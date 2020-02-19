@@ -65,7 +65,7 @@ function generateMarkdown(jsonPath, logger) {
       constraintCell = constraintCell + `<br>- **format**: ${pattern}`;
     }
 
-    const enumCell = enumValues ? enumValues.join(",") : "";
+    const enumCell = enumValues ? enumValues.join("<br>") : "";
 
     const line = `|${name}|${type}|${descriptionCell}|${constraintCell}|${enumCell}|`;
     logger.write(line);

@@ -23,7 +23,7 @@
 |id|integer|Identifiant unique du mandataire individuel dans eMJPM<br>**example**: 134|- obligatoire||
 |num_siret|string|Numéro SIRET du mandataire individuel (14 chiffres)<br>**example**: 80295478500028|- obligatoire<br>- **format**: ^\d{14}$||
 |email|string|Email du mandataire individuel<br>**example**: mandataire@monmail.com|- obligatoire||
-|sexe|string|Sexe du mandataire individuel<br>**example**: H|- obligatoire|H,F|
+|sexe|string|Sexe du mandataire individuel<br>**example**: H|- obligatoire|H<br>F|
 |nom_naissance|string|Nom de naissance du mandataire individuel<br>**example**: Dupont|- obligatoire||
 |nom_usage|string|Nom d'usage du mandataire individuel<br>**example**: Dupont|- obligatoire||
 |prenom|string|Prénom d'usage du mandataire individuel<br>**example**: Thomas|- obligatoire||
@@ -48,7 +48,7 @@
 |responsable_service|string|Personne habilitée à représenter le service mandataire<br>**example**: Victoria Dupont|- obligatoire||
 |annee_creation|integer|Année de création du service mandataire<br>**example**: 2009|- obligatoire||
 |convention_collective|string|Convention Nationale Collective de Travail|- obligatoire||
-|organisme_gestionnaire|string|Type d'organisme gestionnaire|- obligatoire|association,ccas,organisme_securite_sociale|
+|organisme_gestionnaire|string|Type d'organisme gestionnaire|- obligatoire|association<br>ccas<br>organisme_securite_sociale|
 |affiliation_federation|boolean|Affiliation à une fédération|- obligatoire||
-|federation|string|Si affilier à une fédération|- obligatoire|unaf,unapei,fnat,autre_federation|
+|federation|string|Si affilier à une fédération|- obligatoire|unaf<br>unapei<br>fnat<br>autre_federation|
 
