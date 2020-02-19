@@ -19,7 +19,7 @@
 ### Mandataire individuel
 
 |nom|description|type|contrainte|
-|-|-|-|-|-|
+|-|-|-|-|
 |id|Identifiant unique du mandataire individuel dans eMJPM<br>*134*||integer|Obligatoire|
 |num_siret|Numéro SIRET du mandataire individuel (14 chiffres)<br>*80295478500028*||string|Obligatoire<br>format: `^\d{14}$`|
 |email|Email du mandataire individuel<br>*mandataire@monmail.com*||string|Obligatoire|
@@ -36,7 +36,7 @@
 ### Service mandataire
 
 |nom|description|type|contrainte|
-|-|-|-|-|-|
+|-|-|-|-|
 |id|Identifiant unique du service mandataire dans eMJPM<br>*134*||integer|Obligatoire|
 |num_siret|Numéro SIRET du service mandataire (14 chiffres).<br>*80295478500028*||string|Obligatoire<br>format: `^\d{14}$`|
 |nom_service|Nom du service mandataire<br>*ATPFO 75*||string|Obligatoire|

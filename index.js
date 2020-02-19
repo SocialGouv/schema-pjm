@@ -37,7 +37,7 @@ function generateMarkdown(jsonPath, logger) {
   logger.write(NEW_LINE);
 
   const header = "|nom|description|type|contrainte|";
-  const subHeader = "|-|-|-|-|-|";
+  const subHeader = "|-|-|-|-|";
   logger.write(header);
   logger.write(NEW_LINE);
   logger.write(subHeader);
