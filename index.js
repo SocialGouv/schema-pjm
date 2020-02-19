@@ -27,6 +27,7 @@ logger.write(`# Schéma de données de la Protection Juridique des Majeurs (PJM)
 generateMarkdown("./schemas/mandataire_individuel.json", logger);
 generateMarkdown("./schemas/service_mandataire.json", logger);
 generateMarkdown("./schemas/service_mandataire_info_personnel.json", logger);
+generateMarkdown("./schemas/mesure_protection.json", logger);
 
 logger.end();
 
