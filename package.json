@@ -4,8 +4,7 @@
   "description": "## Liste des données des tables de référence",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node index.js"
   },
   "repository": {
     "type": "git",
