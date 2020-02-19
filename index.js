@@ -36,7 +36,7 @@ function generateMarkdown(jsonPath, logger) {
   logger.write(NEW_LINE);
   logger.write(NEW_LINE);
 
-  const header = "|nom|description|type|contrainte|";
+  const header = "|nom|type|description|contrainte|";
   const subHeader = "|-|-|-|-|";
   logger.write(header);
   logger.write(NEW_LINE);
@@ -56,9 +56,13 @@ function generateMarkdown(jsonPath, logger) {
     const pattern = constraints.pattern
       ? `format: \`${constraints.pattern}\``
       : null;
+
+    const descriptionCell = example
+      ? `${description}<br>*(exemple: ${example})*`
+      : description;
     const constraintCell = pattern ? `${required}<br>${pattern}` : required;
 
-    const line = `|${name}|${description}<br>*${example}*|${type}|${constraintCell}|`;
+    const line = `|${name}|${type}|${descriptionCell}|${constraintCell}|`;
     logger.write(line);
     logger.write(NEW_LINE);
   }
