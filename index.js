@@ -6,7 +6,7 @@ const LINE = "\n";
 const logger = fs.createWriteStream("./schemas/mandataire_individuel.md");
 
 const header = "|nom|description|exemple|type|contrainte|";
-const subHeader = "|-|-|-|-|";
+const subHeader = "|-|-|-|-|-|";
 logger.write(header);
 logger.write(LINE);
 logger.write(subHeader);

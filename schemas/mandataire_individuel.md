@@ -1,5 +1,5 @@
 |nom|description|exemple|type|contrainte|
-|-|-|-|-|
+|-|-|-|-|-|
 |id|Identifiant unique du mandataire individuel dans eMJPM|134|integer|Obligatoire<br>undefined|
 |num_siret|Numéro SIRET du mandataire individuel (14 chiffres)|80295478500028|string|Obligatoire<br>^\d{14}$|
 |email|Email du mandataire individuel|mandataire@monmail.com|string|Obligatoire<br>undefined|
