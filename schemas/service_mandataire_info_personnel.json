@@ -40,7 +40,7 @@
     },
     {
       "name": "service_id",
-      "description": "Identifiant unique du service",
+      "description": "Identifiant unique du service mandataire",
       "example": "123",
       "type": "integer",
       "constraints": {
