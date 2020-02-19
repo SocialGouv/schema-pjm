@@ -1,0 +1,101 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": " Informations sur le personnel du service mandataire",
+  "description": "Spécification des données d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/service_mandataire_info_personnel.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "annee",
+      "description": "Année correspondante aux informations transmises",
+      "example": "2019",
+      "type": "integer",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\d{4}$"
+      }
+    },
+    {
+      "name": "service_id",
+      "description": "Identifiant unique du service mandataire",
+      "example": "123",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_postes_delegues_etp",
+      "description": "Nombre de postes de délégués en ETP au 31/12",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues",
+      "description": "Nombre de délégués au 31/12",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_poste_autre_personnel_etp",
+      "description": "Nombre de postes autres personnels en ETP au 31/12",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues_avec_cnc",
+      "description": "Nombre de délégués en poste au 31/12 et ayant CNC",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues_en_formation",
+      "description": "Nombre de délégués en poste au 31/12 et en formation",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues_non_formes",
+      "description": "Nombre de délégués en poste au 31/12 ni formés, ni en formation",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "missingValues": [""],
+  "primaryKey": ""
+}
