@@ -50,17 +50,26 @@ function generateMarkdown(jsonPath, logger) {
     const description = field.description;
     const example = field.example;
     const type = field.type;
-
     const constraints = field.constraints;
-    const required = constraints.required ? "Obligatoire" : "Optionnel";
-    const pattern = constraints.pattern
-      ? `format: \`${constraints.pattern}\``
-      : null;
+    const required = constraints.required;
+    const pattern = constraints.pattern;
+    const enumValues = constraints.enum;
 
-    const descriptionCell = example
-      ? `${description}<br>*(exemple: ${example})*`
-      : description;
-    const constraintCell = pattern ? `${required}<br>${pattern}` : required;
+    let descriptionCell = description;
+    if (example) {
+      descriptionCell = descriptionCell + `<br>**example**: ${example}`;
+    }
+
+    let constraintCell = `${
+      required ? "donnée obligatoire" : "donnée optionnel"
+    }`;
+    if (pattern) {
+        constraintCell = constraintCell + `<br>**format**: ${pattern}`;
+      }
+    if (enumValues) {
+      constraintCell =
+        constraintCell + `<br>**valeurs possibles**: ${enumValues.join(",")}`;
+    }
 
     const line = `|${name}|${type}|${descriptionCell}|${constraintCell}|`;
     logger.write(line);
