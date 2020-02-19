@@ -1,0 +1,19 @@
+{
+  "name": "schema-pjm",
+  "version": "1.0.0",
+  "description": "## Liste des données des tables de référence",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SocialGouv/schema-pjm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SocialGouv/schema-pjm/issues"
+  },
+  "homepage": "https://github.com/SocialGouv/schema-pjm#readme"
+}

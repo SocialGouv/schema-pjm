@@ -1,11 +1,11 @@
 {
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
-  "title": "Mandataire individuel",
+  "title": "Service mandataire",
   "description": "Spécification des données d'un mandataire individuel",
   "keywords": ["mandataire", "individuel"],
   "countryCode": "FR",
   "homepage": "https://github.com/SocialGouv/schema-pjm",
-  "path": "https://github.com/SocialGouv/schema-pjm/service_mandataire.json",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/service_mandataire.json",
   "licenses": [
     {
       "title": "Licence Ouverte",
