@@ -62,11 +62,11 @@ function generateMarkdown(jsonPath, logger) {
 
     let constraintCell = `${required ? "- obligatoire" : "- optionnel"}`;
     if (pattern) {
-      constraintCell = constraintCell + `<br>**format**: ${pattern}`;
+      constraintCell = constraintCell + `<br>- **format**: ${pattern}`;
     }
     if (enumValues) {
       constraintCell =
-        constraintCell + `<br>**valeurs possibles**: ${enumValues.join(",")}`;
+        constraintCell + `<br>- **valeurs acceptées**: ${enumValues.join(",")}`;
     }
 
     const line = `|${name}|${type}|${descriptionCell}|${constraintCell}|`;
