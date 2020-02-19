@@ -36,7 +36,7 @@ function generateMarkdown(jsonPath, logger) {
   logger.write(NEW_LINE);
   logger.write(NEW_LINE);
 
-  const header = "|nom|type|description|contrainte|enum|";
+  const header = "|nom|type|description|format|enum|";
   const subHeader = "|-|-|-|-|-|";
   logger.write(header);
   logger.write(NEW_LINE);
@@ -60,14 +60,11 @@ function generateMarkdown(jsonPath, logger) {
       descriptionCell = descriptionCell + `<br>**example**: ${example}`;
     }
 
-    let constraintCell = `${required ? "- obligatoire" : "- optionnel"}`;
-    if (pattern) {
-      constraintCell = constraintCell + `<br>- **format**: ${pattern}`;
-    }
+    let formatCell = `\`${pattern}\``;
 
     const enumCell = enumValues ? enumValues.join("<br>") : "";
 
-    const line = `|${name}|${type}|${descriptionCell}|${constraintCell}|${enumCell}|`;
+    const line = `|${name}|${type}|${descriptionCell}|${formatCell}|${enumCell}|`;
     logger.write(line);
     logger.write(NEW_LINE);
   }
