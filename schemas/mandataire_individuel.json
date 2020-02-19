@@ -30,7 +30,7 @@
   "fields": [
     {
       "name": "id",
-      "description": "Identifiant unique du mandataire individuel dans eMJPM",
+      "description": "Identifiant unique emjpm du mandataire individuel",
       "example": "134",
       "type": "integer",
       "constraints": {
@@ -52,9 +52,9 @@
       "description": "Email du mandataire individuel",
       "example": "mandataire@monmail.com",
       "type": "string",
+      "format": "email",
       "constraints": {
-        "required": true,
-        "format": "email"
+        "required": true
       }
     },
     {

@@ -2,7 +2,7 @@
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
   "title": "Service mandataire",
   "description": "Spécification des données d'un mandataire individuel",
-  "keywords": ["mandataire", "individuel"],
+  "keywords": ["mandataire", "service"],
   "countryCode": "FR",
   "homepage": "https://github.com/SocialGouv/schema-pjm",
   "path": "https://github.com/SocialGouv/schema-pjm/schemas/service_mandataire.json",
@@ -30,7 +30,7 @@
   "fields": [
     {
       "name": "id",
-      "description": "Identifiant unique du service mandataire dans eMJPM",
+      "description": "Identifiant unique emjpm du service mandataire",
       "example": "134",
       "type": "integer",
       "constraints": {

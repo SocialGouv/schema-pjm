@@ -1,0 +1,225 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Information sur la mesure de protection",
+  "description": "Spécification des données d'un mandataire individuel",
+  "keywords": ["mesure", "protection"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/mesure_protection.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "id",
+      "description": "Identifiant unique emjpm de la mesure de protection",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nom_naissance",
+      "description": "Nom de naissance du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "nom_usage",
+      "description": "Nom d'usage du majeur protégé'",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "prenom",
+      "description": "Prénom du majeur protégé'",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "date_naissance",
+      "description": "Date de naissance du majeur protégé",
+      "example": "22/05/1938",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sexe",
+      "description": "Sexe du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["H", "F"]
+      }
+    },
+    {
+      "name": "date_jugement",
+      "description": "Date de jugement de la mesure de protection",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "tribunal_siret",
+      "description": "Siret du tribunal ayant attribué la mesure de protection.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "pattern": "^\\d{14}$"
+      }
+    },
+    {
+      "name": "numero_rg",
+      "description": "Numéro répertoire général (RG)",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "date_revision",
+      "description": "Date de revision de la mesure de protection",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "resultat_revision",
+      "description": "Résultat de la révision de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "mainlevee",
+          "masp",
+          "reduction",
+          "changement_mesure",
+          "transfert_famille",
+          "transfert_autre_mjpm"
+        ]
+      }
+    },
+    {
+      "name": "date_fin_mesure",
+      "description": "Date de fin de la mesure de protection",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cause_sortie",
+      "description": "Causes de sortie de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": ["mainlevee", "deces", "masp", "caducite"]
+      }
+    },
+    {
+      "name": "nature_mesure",
+      "description": "Nature de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "curatelle_simple",
+          "curatelle_renforcee",
+          "tutelle",
+          "sauvegarde_justice",
+          "maj",
+          "subroge_curateur",
+          "subroge_tuteur",
+          "mandat_protection_future",
+          "mesure_ad_hoc"
+        ]
+      }
+    },
+    {
+      "name": "champs_mesure",
+      "description": "Champs de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "protection_bien",
+          "protection_personne",
+          "protection_bien_personne"
+        ]
+      }
+    },
+    {
+      "name": "lieu_vie",
+      "description": "Lieu de vie du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "domicile",
+          "etablissement",
+          "etablissement_conservation_domicile"
+        ]
+      }
+    },
+    {
+      "name": "type_etablissement",
+      "description": "Si établissement",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "etablissement_handicapes",
+          "etablissement_personne_agee",
+          "autre_etablissement_s_ms",
+          "etablissement_hospitalier",
+          "etablissement_psychiatrique"
+        ]
+      }
+    }
+  ],
+  "custom_checks": [
+    {
+      "name": "french-siret-value",
+      "params": {
+        "column": "tribunal_siret"
+      }
+    }
+  ],
+  "missingValues": [""],
+  "primaryKey": "id"
+}
