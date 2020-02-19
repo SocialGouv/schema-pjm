@@ -58,6 +58,6 @@ function generateMarkdown(jsonPath, logger) {
     const line = `|${name}|${description}|${example}|${type}|${required}<br>${pattern}|`;
     logger.write(line);
     logger.write(NEW_LINE);
-    logger.write(NEW_LINE);
   }
+  logger.write(NEW_LINE);
 }
