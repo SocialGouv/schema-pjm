@@ -1,0 +1,63 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Mandataire individuel",
+  "description": "Formation et niveau qualification d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel", "formation"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel_formation.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "annee_obtention_cnc",
+      "description": "Année d'obtention du CNC",
+      "example": "22/08/1988",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "niveau_qualification",
+      "description": "Niveau de qualification",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 1,
+        "maximum": 5
+      }
+    },
+    {
+      "name": "niveau_qualification_secretaire_spe",
+      "description": "Niveau de qualification du secrétaire spécialisé",
+      "type": "integer",
+      "constraints": {
+        "required": false,
+        "minimum": 1,
+        "maximum": 5
+      }
+    }
+  ],
+  "missingValues": [""]
+}
