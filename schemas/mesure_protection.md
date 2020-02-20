@@ -2,7 +2,7 @@
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
-|id|integer|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
+|uuid|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
 |nom_naissance|string|Nom de naissance du majeur protégé|||
 |nom_usage|string|Nom d'usage du majeur protégé|||
 |prenom|string|Prénom du majeur protégé|||

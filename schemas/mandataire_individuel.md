@@ -2,7 +2,6 @@
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
-|id|integer|Identifiant unique emjpm du mandataire individuel *(example: 134)*<br>**donnée requise**|||
 |num_siret|string|Numéro SIRET du mandataire individuel (14 chiffres) *(example: 80295478500028)*<br>**donnée requise**|`^\d{14}$`||
 |email|string|Email du mandataire individuel *(example: mandataire@monmail.com)*<br>**donnée requise**|||
 |sexe|string|Sexe du mandataire individuel *(example: H)*<br>**donnée requise**||H<br>F|

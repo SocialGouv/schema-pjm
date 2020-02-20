@@ -29,15 +29,6 @@
   "contact": "",
   "fields": [
     {
-      "name": "id",
-      "description": "Identifiant unique emjpm du service mandataire",
-      "example": "134",
-      "type": "integer",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
       "name": "num_siret",
       "description": "Numéro SIRET du service mandataire (14 chiffres).",
       "example": "80295478500028",

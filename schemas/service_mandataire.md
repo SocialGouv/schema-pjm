@@ -2,7 +2,6 @@
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
-|id|integer|Identifiant unique emjpm du service mandataire *(example: 134)*<br>**donnée requise**|||
 |num_siret|string|Numéro SIRET du service mandataire (14 chiffres). *(example: 80295478500028)*<br>**donnée requise**|`^\d{14}$`||
 |nom_service|string|Nom du service mandataire *(example: ATPFO 75)*<br>**donnée requise**|||
 |adresse|string|L'adresse du siège social du service mandataire *(example: 14 Avenue Duquesne)*<br>**donnée requise**|||

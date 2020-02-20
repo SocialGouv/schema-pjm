@@ -29,9 +29,9 @@
   "contact": "",
   "fields": [
     {
-      "name": "id",
+      "name": "uuid",
       "description": "Identifiant unique emjpm de la mesure de protection",
-      "type": "integer",
+      "type": "string",
       "constraints": {
         "required": true
       }
@@ -221,5 +221,5 @@
     }
   ],
   "missingValues": [""],
-  "primaryKey": "id"
+  "primaryKey": "uuid"
 }
