@@ -40,10 +40,10 @@ function generateMarkdown(jsonPath) {
 
     let descriptionCell = description;
     if (example) {
-      descriptionCell = descriptionCell + `<br>**example**: ${example}`;
+      descriptionCell = descriptionCell + ` *example*: ${example}*`;
     }
     if (required) {
-      descriptionCell = descriptionCell + `<br>**Obligatoire**`;
+      descriptionCell = descriptionCell + `<br>**donnée requise**`;
     }
     if (minimum && !maximum) {
       descriptionCell = descriptionCell + `<br>**min: ${minimum}**`;
@@ -53,7 +53,7 @@ function generateMarkdown(jsonPath) {
     }
     if (maximum && minimum) {
       descriptionCell =
-        descriptionCell + `<br>**min: ${minimum}** **max: ${maximum}**`;
+        descriptionCell + `<br>**min: ${minimum}**, **max: ${maximum}**`;
     }
 
     let formatCell = pattern ? `\`${pattern}\`` : "";
