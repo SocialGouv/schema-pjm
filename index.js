@@ -33,12 +33,27 @@ function generateMarkdown(jsonPath) {
     const type = field.type;
     const constraints = field.constraints;
     const required = constraints.required;
+    const minimum = constraints.minimum;
+    const maximum = constraints.maximum;
     const pattern = constraints.pattern;
     const enumValues = constraints.enum;
 
     let descriptionCell = description;
     if (example) {
-      descriptionCell = descriptionCell + `<br>**example**: ${example}`;
+      descriptionCell = descriptionCell + ` *(example: ${example})*`;
+    }
+    if (required) {
+      descriptionCell = descriptionCell + `<br>**donnée requise**`;
+    }
+    if (minimum && !maximum) {
+      descriptionCell = descriptionCell + `<br>**min: ${minimum}**`;
+    }
+    if (maximum && !minimum) {
+      descriptionCell = descriptionCell + `<br>**max: ${maximum}**`;
+    }
+    if (maximum && minimum) {
+      descriptionCell =
+        descriptionCell + `<br>**min: ${minimum}**, **max: ${maximum}**`;
     }
 
     let formatCell = pattern ? `\`${pattern}\`` : "";
