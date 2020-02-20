@@ -40,7 +40,7 @@ function generateMarkdown(jsonPath) {
 
     let descriptionCell = description;
     if (example) {
-      descriptionCell = descriptionCell + ` *example*: ${example}*`;
+      descriptionCell = descriptionCell + ` *(example: ${example})*`;
     }
     if (required) {
       descriptionCell = descriptionCell + `<br>**donnée requise**`;
