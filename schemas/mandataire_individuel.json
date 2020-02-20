@@ -114,7 +114,7 @@
       }
     },
     {
-      "name": "Ville",
+      "name": "ville",
       "description": "Ville du lieu de travail du mandataire individuel",
       "example": "Paris",
       "type": "string",
