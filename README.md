@@ -15,6 +15,7 @@
 ## Schéma de données
 
 - [Mandataire individuel](./schemas/mandataire_individuel.md)
+- [Mandataire individuel - formation et niveau de qualification](./schemas/mandataire_individuel_formation.md)
 - [Service mandataire](./schemas/service_mandataire.md)
 - [Service mandataire - information sur le personnel](./schemas/service_mandataire_info_personnel.md)
 - [Mesure de protection](./schemas/mesure_protection.md)
