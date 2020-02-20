@@ -1,6 +1,6 @@
 {
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
-  "title": "Mandataire individuel",
+  "title": "Formation et niveau qualification d'un mandataire individuel",
   "description": "Formation et niveau qualification d'un mandataire individuel",
   "keywords": ["mandataire", "individuel", "formation"],
   "countryCode": "FR",
