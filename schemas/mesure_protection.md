@@ -3,9 +3,6 @@
 |nom|type|description|format|enum|
 |-|-|-|-|-|
 |uuid|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
-|nom_naissance|string|Nom de naissance du majeur protégé|||
-|nom_usage|string|Nom d'usage du majeur protégé|||
-|prenom|string|Prénom du majeur protégé|||
 |date_naissance|date|Date de naissance du majeur protégé *(example: 22/05/1938)*<br>**donnée requise**|||
 |sexe|string|Sexe du majeur protégé<br>**donnée requise**||H<br>F|
 |date_jugement|date|Date de jugement de la mesure de protection *(example: 01/02/2020)*<br>**donnée requise**|||

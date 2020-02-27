@@ -37,30 +37,6 @@
       }
     },
     {
-      "name": "nom_naissance",
-      "description": "Nom de naissance du majeur protégé",
-      "type": "string",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
-      "name": "nom_usage",
-      "description": "Nom d'usage du majeur protégé",
-      "type": "string",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
-      "name": "prenom",
-      "description": "Prénom du majeur protégé",
-      "type": "string",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
       "name": "date_naissance",
       "description": "Date de naissance du majeur protégé",
       "example": "22/05/1938",
