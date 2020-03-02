@@ -1,7 +1,7 @@
 ## Liste des données des tables de référence
 
 - [Sexe](./datas/sexe.csv)
-- [Aides sociales](./datas/aide-sociale.csv)
+- [Prestations sociales](./datas/prestation-sociale.csv)
 - [Causes de sortie de dispositif](./datas/cause-sortie.csv)
 - [Champs de la mesure](./datas/champs-mesure.csv)
 - [Fédérations des services mandataires](./datas/federation-service.csv)
