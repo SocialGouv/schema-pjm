@@ -1,6 +1,7 @@
 ## Liste des données des tables de référence
 
 - [Civilité](./datas/civilite.csv)
+- [Forme juridique](./datas/forme-juridique.csv)
 - [Prestations sociales](./datas/prestation-sociale.csv)
 - [Causes de sortie de dispositif](./datas/cause-sortie-dispositif.csv)
 - [Champs de la mesure](./datas/champs-mesure.csv)

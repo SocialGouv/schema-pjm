@@ -39,6 +39,26 @@
       }
     },
     {
+      "name": "lieu_exercice",
+      "description": "Lieu d'exercice du mandataire individuelle",
+      "example": "EARL",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["domicile", "cabinet", "cabinet_partage"]
+      }
+    },
+    {
+      "name": "forme_juridique",
+      "description": "Forme juridique de la société du mandataire individuel",
+      "example": "EARL",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["EARL", "EI", "EIRL", "EURL", "SARL", "SA", "SAS,", "SASU"]
+      }
+    },
+    {
       "name": "email",
       "description": "Email du mandataire individuel",
       "example": "mandataire@monmail.com",
@@ -72,6 +92,16 @@
       "description": "Nom d'usage du mandataire individuel",
       "example": "Dupont",
       "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "date_naissance",
+      "description": "Date de naissance du mandataire judiciaire",
+      "example": "22/05/1938",
+      "type": "date",
+      "format": "DD/MM/YYYY",
       "constraints": {
         "required": true
       }
