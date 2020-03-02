@@ -17,4 +17,5 @@
 |champs_mesure|string|Champs de la mesure de protection<br>**donnée requise**||protection_bien<br>protection_personne<br>protection_bien_personne|
 |lieu_vie|string|Lieu de vie du majeur protégé<br>**donnée requise**||domicile<br>etablissement<br>etablissement_conservation_domicile|
 |type_etablissement|string|Si établissement<br>**donnée requise**||etablissement_handicapes<br>etablissement_personne_agee<br>autre_etablissement_s_ms<br>etablissement_hospitalier<br>etablissement_psychiatrique|
+|niveau_ressource|integer|Niveau de ressource correspondant à l'assiette<br>**donnée requise**|||
 |prestations_sociales|array|Prestations sociales perçues<br>**donnée requise**||AAH<br>PCH<br>ASI<br>RSA<br>ALS<br>APL<br>ASPA<br>APA|

@@ -197,6 +197,14 @@
       }
     },
     {
+      "name": "niveau_ressource",
+      "description": "Niveau de ressource correspondant à l'assiette",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
       "name": "prestations_sociales",
       "description": "Prestations sociales perçues",
       "type": "array",
