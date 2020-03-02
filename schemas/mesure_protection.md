@@ -4,7 +4,7 @@
 |-|-|-|-|-|
 |uuid|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
 |date_naissance|date|Date de naissance du majeur protégé *(example: 22/05/1938)*<br>**donnée requise**|||
-|sexe|string|Sexe du majeur protégé<br>**donnée requise**||H<br>F|
+|civilite|string|Civilité du majeur protégé<br>**donnée requise**||madame<br>monsieur|
 |date_jugement|date|Date de jugement de la mesure de protection *(example: 01/02/2020)*<br>**donnée requise**|||
 |tribunal_siret|string|Siret du tribunal ayant attribué la mesure de protection.<br>**donnée requise**|`^\d{14}$`||
 |numero_rg|string|Numéro répertoire général (RG)<br>**donnée requise**|||

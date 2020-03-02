@@ -4,7 +4,7 @@
 |-|-|-|-|-|
 |num_siret|string|Numéro SIRET du mandataire individuel (14 chiffres) *(example: 80295478500028)*<br>**donnée requise**|`^\d{14}$`||
 |email|string|Email du mandataire individuel *(example: mandataire@monmail.com)*<br>**donnée requise**|||
-|sexe|string|Sexe du mandataire individuel *(example: H)*<br>**donnée requise**||H<br>F|
+|civilite|string|Civilité du mandataire individuel *(example: H)*<br>**donnée requise**||madame<br>monsieur|
 |nom_naissance|string|Nom de naissance du mandataire individuel *(example: Dupont)*<br>**donnée requise**|||
 |nom_usage|string|Nom d'usage du mandataire individuel *(example: Dupont)*<br>**donnée requise**|||
 |prenom|string|Prénom d'usage du mandataire individuel *(example: Thomas)*<br>**donnée requise**|||

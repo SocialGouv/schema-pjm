@@ -49,13 +49,13 @@
       }
     },
     {
-      "name": "sexe",
-      "description": "Sexe du mandataire individuel",
+      "name": "civilite",
+      "description": "Civilité du mandataire individuel",
       "example": "H",
       "type": "string",
       "constraints": {
         "required": true,
-        "enum": ["H", "F"]
+        "enum": ["madame", "monsieur"]
       }
     },
     {

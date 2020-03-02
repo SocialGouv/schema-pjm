@@ -47,12 +47,12 @@
       }
     },
     {
-      "name": "sexe",
-      "description": "Sexe du majeur protégé",
+      "name": "civilite",
+      "description": "Civilité du majeur protégé",
       "type": "string",
       "constraints": {
         "required": true,
-        "enum": ["H", "F"]
+        "enum": ["madame", "monsieur"]
       }
     },
     {
