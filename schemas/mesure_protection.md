@@ -3,6 +3,7 @@
 |nom|type|description|format|enum|
 |-|-|-|-|-|
 |uuid|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
+|antenne_uuid|string|Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'|||
 |date_naissance|date|Date de naissance du majeur protégé *(example: 22/05/1938)*<br>**donnée requise**|||
 |civilite|string|Civilité du majeur protégé<br>**donnée requise**||madame<br>monsieur|
 |date_jugement|date|Date de jugement de la mesure de protection *(example: 01/02/2020)*<br>**donnée requise**|||

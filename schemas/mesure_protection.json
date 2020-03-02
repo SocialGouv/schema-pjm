@@ -37,6 +37,14 @@
       }
     },
     {
+      "name": "antenne_uuid",
+      "description": "Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
       "name": "date_naissance",
       "description": "Date de naissance du majeur protégé",
       "example": "22/05/1938",
