@@ -1,4 +1,4 @@
-## Liste des données des tables de référence
+## Liste des données de référence
 
 - [Civilité](./datas/civilite.csv)
 - [Forme juridique](./datas/forme-juridique.csv)
