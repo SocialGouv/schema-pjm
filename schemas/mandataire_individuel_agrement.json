@@ -1,0 +1,69 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Formation et niveau qualification d'un mandataire individuel",
+  "description": "Formation et niveau qualification d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel", "formation"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel_formation.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "annee_debut_activite",
+      "description": "Année de début de votre activité",
+      "type": "integer",
+      "exemple": "2007",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "annee_agrement",
+      "description": "Année d'agrément",
+      "type": "integer",
+      "exemple": "2009",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "departement_financeur",
+      "description": "Code du département financeur",
+      "type": "string",
+      "exemple": "75",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "departements_agrement",
+      "description": "Liste des départements dans lesquels vous avez un agrément, y compris le département financeur",
+      "type": "array",
+      "exemple": "['75', '94', '92']",
+      "constraints": {
+        "required": true
+      }
+    }
+  ],
+  "missingValues": [""]
+}
