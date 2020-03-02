@@ -12,7 +12,9 @@
 |resultat_revision|string|Résultat de la révision de la mesure de protection||mainlevee<br>masp<br>reduction<br>changement_mesure<br>transfert_famille<br>transfert_autre_mjpm|
 |date_fin_mesure|date|Date de fin de la mesure de protection *(example: 01/02/2020)*|||
 |cause_sortie|string|Causes de sortie de la mesure de protection||mainlevee<br>deces<br>masp<br>caducite|
+|cause_sortie_mainlevee_detail|string|Causes de sortie de la mesure de protection, détail de la main levée||masp<br>maj|
 |nature_mesure|string|Nature de la mesure de protection<br>**donnée requise**||curatelle_simple<br>curatelle_renforcee<br>tutelle<br>sauvegarde_justice<br>maj<br>subroge_curateur<br>subroge_tuteur<br>mandat_protection_future<br>mesure_ad_hoc|
 |champs_mesure|string|Champs de la mesure de protection<br>**donnée requise**||protection_bien<br>protection_personne<br>protection_bien_personne|
 |lieu_vie|string|Lieu de vie du majeur protégé<br>**donnée requise**||domicile<br>etablissement<br>etablissement_conservation_domicile|
 |type_etablissement|string|Si établissement<br>**donnée requise**||etablissement_handicapes<br>etablissement_personne_agee<br>autre_etablissement_s_ms<br>etablissement_hospitalier<br>etablissement_psychiatrique|
+|prestations_sociales|array|Prestations sociales perçues<br>**donnée requise**||AAH<br>PCH<br>ASI<br>RSA<br>ALS<br>APL<br>ASPA<br>APA|

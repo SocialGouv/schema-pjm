@@ -128,6 +128,15 @@
       }
     },
     {
+      "name": "cause_sortie_mainlevee_detail",
+      "description": "Causes de sortie de la mesure de protection, détail de la main levée",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": ["masp", "maj"]
+      }
+    },
+    {
       "name": "nature_mesure",
       "description": "Nature de la mesure de protection",
       "type": "string",
@@ -185,6 +194,15 @@
           "etablissement_hospitalier",
           "etablissement_psychiatrique"
         ]
+      }
+    },
+    {
+      "name": "prestations_sociales",
+      "description": "Prestations sociales perçues",
+      "type": "array",
+      "constraints": {
+        "required": true,
+        "enum": ["AAH", "PCH", "ASI", "RSA", "ALS", "APL", "ASPA", "APA"]
       }
     }
   ],
