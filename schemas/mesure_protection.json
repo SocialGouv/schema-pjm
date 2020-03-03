@@ -83,6 +83,14 @@
       }
     },
     {
+      "name": "tribunal_cabinet",
+      "description": "Cabinet du tribunal ayant attribué la mesure de protection.",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
       "name": "numero_rg",
       "description": "Numéro répertoire général (RG)",
       "type": "string",

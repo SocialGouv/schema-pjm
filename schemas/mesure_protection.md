@@ -8,6 +8,7 @@
 |civilite|string|Civilité du majeur protégé<br>**donnée requise**||madame<br>monsieur|
 |date_jugement|date|Date de jugement de la mesure de protection *(example: 01/02/2020)*<br>**donnée requise**|||
 |tribunal_siret|string|Siret du tribunal ayant attribué la mesure de protection.<br>**donnée requise**|`^\d{14}$`||
+|tribunal_cabinet|string|Cabinet du tribunal ayant attribué la mesure de protection.|||
 |numero_rg|string|Numéro répertoire général (RG)<br>**donnée requise**|||
 |date_revision|date|Date de revision de la mesure de protection *(example: 01/02/2020)*|||
 |resultat_revision|string|Résultat de la révision de la mesure de protection||mainlevee<br>masp<br>reduction<br>changement_mesure<br>transfert_famille<br>transfert_autre_mjpm|
