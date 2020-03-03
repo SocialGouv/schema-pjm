@@ -29,11 +29,55 @@
   "contact": "",
   "fields": [
     {
-      "name": "annee_obtention_cnc",
-      "description": "Année d'obtention du CNC",
+      "name": "cnc_mjpm_annee_obtention",
+      "description": "Année d'obtention du CNC MJPM",
       "example": "22/08/1988",
       "type": "date",
       "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cnc_mjpm_heure_formation",
+      "description": "Nombre d'heures de formation dans le cadre du CNC MJPM (hors stage)",
+      "type": "integer",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cnc_maj_annee_obtention",
+      "description": "Année d'obtention du CNC MAJ",
+      "example": "22/08/1988",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cnc_maj_heure_formation",
+      "description": "Nombre d'heures de formation dans le cadre du CNC MAJ (hors stage)",
+      "type": "integer",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cnc_dpf_annee_obtention",
+      "description": "Année d'obtention du CNC DPF",
+      "example": "22/08/1988",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cnc_dpf_heure_formation",
+      "description": "Nombre d'heures de formation dans le cadre du CNC DPF (hors stage)",
+      "type": "integer",
       "constraints": {
         "required": false
       }
