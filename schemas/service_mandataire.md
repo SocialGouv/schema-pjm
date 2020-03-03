@@ -11,7 +11,7 @@
 |email|string|Email du service mandataire *(example: mandataire@monmail.com)*<br>**donnée requise**|||
 |responsable_service|string|Personne habilitée à représenter le service mandataire *(example: Victoria Dupont)*<br>**donnée requise**|||
 |annee_creation|integer|Année de création du service mandataire *(example: 2009)*<br>**donnée requise**<br>**min: 1950**, **max: 2020**|||
-|convention_collective|string|Convention Nationale Collective de Travail<br>**donnée requise**|||
+|convention_collective|string|Convention Nationale Collective de Travail<br>**donnée requise**||CC66<br>CCN51<br>autre<br>aucune|
 |organisme_gestionnaire|string|Type d'organisme gestionnaire<br>**donnée requise**||association<br>ccas<br>organisme_securite_sociale|
 |affiliation_federation|boolean|Affiliation à une fédération<br>**donnée requise**|||
 |federation|string|Si affilier à une fédération<br>**donnée requise**||unaf<br>unapei<br>fnat<br>autre_federation|

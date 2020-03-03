@@ -121,7 +121,8 @@
       "example": "",
       "type": "string",
       "constraints": {
-        "required": true
+        "required": true,
+        "enum": ["CC66", "CCN51", "autre", "aucune"]
       }
     },
     {

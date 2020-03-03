@@ -13,6 +13,7 @@
 - [Résultats d'une révision d'une mesure](./datas/resultat-revision-mesure.csv)
 - [Types d'établissement](./datas/type-etablissement.csv)
 - [Intervalle ETP](./datas/intervalle-etp.csv)
+- [Convention collective](./datas/convention-collective.csv)
 
 ## Schéma de données
 
