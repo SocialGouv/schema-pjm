@@ -39,15 +39,6 @@
       }
     },
     {
-      "name": "service_id",
-      "description": "Identifiant unique emjpm du service mandataire",
-      "example": "123",
-      "type": "integer",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
       "name": "nombre_postes_delegues_etp",
       "description": "Nombre de postes de délégués en ETP au 31/12",
       "type": "integer",
