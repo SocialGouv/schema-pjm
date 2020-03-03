@@ -1,6 +1,6 @@
 {
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
-  "title": "Information sur la mesure de protection",
+  "title": "Mesure de protection",
   "description": "Spécification des données d'un mandataire individuel",
   "keywords": ["mesure", "protection"],
   "countryCode": "FR",
@@ -187,6 +187,14 @@
           "etablissement",
           "etablissement_conservation_domicile"
         ]
+      }
+    },
+    {
+      "name": "etablissement_finess",
+      "description": "Si établissement, FINESS de l'établissement",
+      "type": "string",
+      "constraints": {
+        "required": false
       }
     },
     {
