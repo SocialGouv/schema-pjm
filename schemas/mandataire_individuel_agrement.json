@@ -29,19 +29,27 @@
   "contact": "",
   "fields": [
     {
-      "name": "annee_debut_activite",
-      "description": "Année de début de votre activité",
-      "type": "integer",
-      "exemple": "2007",
+      "name": "debut_activite_avant_2009",
+      "description": "L'activité du mandataire individuel a-t-elle débuté avant 2009?",
+      "type": "boolean",
       "constraints": {
         "required": true
+      }
+    },
+    {
+      "name": "annee_debut_activite",
+      "description": "Si début d'activité avant 2009, année de début de votre activité",
+      "type": "integer",
+      "example": "2007",
+      "constraints": {
+        "required": false
       }
     },
     {
       "name": "annee_agrement",
       "description": "Année d'agrément",
       "type": "integer",
-      "exemple": "2009",
+      "example": "2009",
       "constraints": {
         "required": true
       }
@@ -50,16 +58,16 @@
       "name": "departement_financeur",
       "description": "Code du département financeur",
       "type": "string",
-      "exemple": "75",
+      "example": "75",
       "constraints": {
         "required": true
       }
     },
     {
       "name": "departements_agrement",
-      "description": "Liste des départements dans lesquels vous avez un agrément, y compris le département financeur",
+      "description": "Liste des départements dans lesquels le mandataire individuel a un agrément, y compris le département financeur",
       "type": "array",
-      "exemple": "['75', '94', '92']",
+      "example": "['75', '94', '92']",
       "constraints": {
         "required": true
       }
