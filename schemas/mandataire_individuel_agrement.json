@@ -1,8 +1,8 @@
 {
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
   "title": "Formation et niveau qualification d'un mandataire individuel",
-  "description": "Formation et niveau qualification d'un mandataire individuel",
-  "keywords": ["mandataire", "individuel", "formation"],
+  "description": "Agrément d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel", "agrément"],
   "countryCode": "FR",
   "homepage": "https://github.com/SocialGouv/schema-pjm",
   "path": "https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel_formation.json",

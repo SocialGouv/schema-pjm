@@ -12,11 +12,13 @@
 - [Organismes gestionnaires](./datas/organisme-gestionnaire.csv)
 - [Résultats d'une révision d'une mesure](./datas/resultat-revision-mesure.csv)
 - [Types d'établissement](./datas/type-etablissement.csv)
+- [Intervalle ETP](./datas/intervalle-etp.csv)
 
 ## Schéma de données
 
 - [Mandataire individuel](./schemas/mandataire_individuel.md)
 - [Mandataire individuel - agrément](./schemas/mandataire_individuel_agrement.md)
+- [Mandataire individuel - modalités d'exercice](./schemas/mandataire_individuel_exercice.md)
 - [Mandataire individuel - formation et niveau de qualification](./schemas/mandataire_individuel_formation.md)
 - [Service mandataire](./schemas/service_mandataire.md)
 - [Service mandataire - information sur le personnel](./schemas/service_mandataire_info_personnel.md)

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Conditions d'exercice d'un mandataire individuel",
+  "description": "Modalités d'exercice d'un mandataire individuel",
+  "keywords": ["mandataire", "individuel", "condition", "exercice"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/mandataire_individuel_formation.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "estimation_etp",
+      "description": "Estimation de l'activité de mandataire individuel en ETP",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "inf_30",
+          "sup_30__inf_50",
+          "sup_50__inf_70",
+          "sup_70__inf_90",
+          "temps_plein"
+        ]
+      }
+    },
+    {
+      "name": "secretaire_specialise",
+      "description": "Exerce avec un secrétaire spécialisé",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "secretaire_specialise_etp",
+      "description": "Estimation de l'activité en ETP du secrétaire spécialisé",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "inf_30",
+          "sup_30__inf_50",
+          "sup_50__inf_70",
+          "sup_70__inf_90",
+          "temps_plein"
+        ]
+      }
+    },
+    {
+      "name": "cumul_prepose",
+      "description": "Situation de cumul en tant que préposé d'établissement (en pourcentage)",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "cumul_prepose_etp",
+      "description": "Si cumul en tant que préposé, ETP consacré au cumul",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "inf_30",
+          "sup_30__inf_50",
+          "sup_50__inf_70",
+          "sup_70__inf_90",
+          "temps_plein"
+        ]
+      }
+    },
+    {
+      "name": "cumul_delegue_service",
+      "description": "Situation de cumul en tant que délégué d'une service mandataire (en pourcentage)",
+      "type": "boolean",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "cumul_prepose_etp",
+      "description": "Si cumul en tant que délégué d'une service mandataire, ETP consacré au cumul",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "inf_30",
+          "sup_30__inf_50",
+          "sup_50__inf_70",
+          "sup_70__inf_90",
+          "temps_plein"
+        ]
+      }
+    }
+  ],
+  "missingValues": [""]
+}

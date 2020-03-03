@@ -4,6 +4,7 @@ const NEW_LINE = "\n";
 
 generateMarkdown("./schemas/mandataire_individuel.json");
 generateMarkdown("./schemas/mandataire_individuel_agrement.json");
+generateMarkdown("./schemas/mandataire_individuel_exercice.json");
 generateMarkdown("./schemas/mandataire_individuel_formation.json");
 generateMarkdown("./schemas/service_mandataire.json");
 generateMarkdown("./schemas/service_mandataire_info_personnel.json");

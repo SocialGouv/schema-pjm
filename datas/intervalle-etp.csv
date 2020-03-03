@@ -1,0 +1,6 @@
+id,description
+inf_30,jusqu'à 30% d'un ETP
+sup_30__inf_50,supérieure à 30% jusqu'à 50%
+sup_50__inf_70,supérieure à 50% jusqu'à 70%
+sup_70__inf_90,supérieure à 70% jusqu'à 90%
+temps_plein,A temps plein
