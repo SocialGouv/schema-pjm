@@ -99,6 +99,14 @@
       }
     },
     {
+      "name": "numero_dossier",
+      "description": "Numéro de dossier",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
       "name": "date_revision",
       "description": "Date de revision de la mesure de protection",
       "example": "01/02/2020",

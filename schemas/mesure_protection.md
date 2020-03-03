@@ -10,6 +10,7 @@
 |tribunal_siret|string|Siret du tribunal ayant attribué la mesure de protection.<br>**donnée requise**|`^\d{14}$`||
 |tribunal_cabinet|string|Cabinet du tribunal ayant attribué la mesure de protection.|||
 |numero_rg|string|Numéro répertoire général (RG)<br>**donnée requise**|||
+|numero_dossier|string|Numéro de dossier|||
 |date_revision|date|Date de revision de la mesure de protection *(example: 01/02/2020)*|||
 |resultat_revision|string|Résultat de la révision de la mesure de protection||mainlevee<br>masp<br>reduction<br>changement_mesure<br>transfert_famille<br>transfert_autre_mjpm|
 |date_fin_mesure|date|Date de fin de la mesure de protection *(example: 01/02/2020)*|||
