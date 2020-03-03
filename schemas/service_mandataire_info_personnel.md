@@ -7,6 +7,9 @@
 |nombre_postes_delegues_etp|integer|Nombre de postes de délégués en ETP au 31/12<br>**donnée requise**|||
 |nombre_delegues|integer|Nombre de délégués au 31/12<br>**donnée requise**|||
 |nombre_poste_autre_personnel_etp|integer|Nombre de postes autres personnels en ETP au 31/12<br>**donnée requise**|||
-|nombre_delegues_avec_cnc|integer|Nombre de délégués en poste au 31/12 et ayant CNC<br>**donnée requise**|||
+|nombre_delegues_cnc|integer|Nombre de délégués en poste au 31/12 et ayant CNC PJM, MAJ ou DPF<br>**donnée requise**|||
+|nombre_delegues_cnc_pjm|integer|Nombre de délégués en poste au 31/12 et ayant CNC PJM<br>**donnée requise**|||
+|nombre_delegues_cnc_maj|integer|Nombre de délégués en poste au 31/12 et ayant CNC MAJ<br>**donnée requise**|||
+|nombre_delegues_cnc_dpf|integer|Nombre de délégués en poste au 31/12 et ayant CNC DPF<br>**donnée requise**|||
 |nombre_delegues_en_formation|integer|Nombre de délégués en poste au 31/12 et en formation<br>**donnée requise**|||
 |nombre_delegues_non_formes|integer|Nombre de délégués en poste au 31/12 ni formés, ni en formation<br>**donnée requise**|||

@@ -72,8 +72,32 @@
       }
     },
     {
-      "name": "nombre_delegues_avec_cnc",
-      "description": "Nombre de délégués en poste au 31/12 et ayant CNC",
+      "name": "nombre_delegues_cnc",
+      "description": "Nombre de délégués en poste au 31/12 et ayant CNC PJM, MAJ ou DPF",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues_cnc_pjm",
+      "description": "Nombre de délégués en poste au 31/12 et ayant CNC PJM",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues_cnc_maj",
+      "description": "Nombre de délégués en poste au 31/12 et ayant CNC MAJ",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nombre_delegues_cnc_dpf",
+      "description": "Nombre de délégués en poste au 31/12 et ayant CNC DPF",
       "type": "integer",
       "constraints": {
         "required": true
