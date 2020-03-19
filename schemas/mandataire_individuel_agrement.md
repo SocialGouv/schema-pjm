@@ -1,4 +1,4 @@
-### Formation et niveau qualification d'un mandataire individuel
+### Agrément d'un mandataire individuel
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
