@@ -1,0 +1,103 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Etat d'une mesure de protection",
+  "description": "Etat d'une mesure de protection",
+  "keywords": ["mesure", "protection", "état"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/mesure_protection.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "date",
+      "description": "Date de début de la protection",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "nature_mesure",
+      "description": "Nature de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "curatelle_simple",
+          "curatelle_renforcee",
+          "tutelle",
+          "sauvegarde_justice",
+          "maj",
+          "subroge_curateur",
+          "subroge_tuteur",
+          "mandat_protection_future",
+          "mesure_ad_hoc"
+        ]
+      }
+    },
+    {
+      "name": "champs_mesure",
+      "description": "Champs de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "protection_bien",
+          "protection_personne",
+          "protection_bien_personne"
+        ]
+      }
+    },
+    {
+      "name": "lieu_vie",
+      "description": "Lieu de vie du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "domicile",
+          "etablissement",
+          "etablissement_conservation_domicile"
+        ]
+      }
+    },
+    {
+      "name": "type_etablissement",
+      "description": "Si établissement",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "etablissement_handicapes",
+          "etablissement_personne_agee",
+          "autre_etablissement_s_ms",
+          "etablissement_hospitalier",
+          "etablissement_psychiatrique"
+        ]
+      }
+    }
+  ],
+  "missingValues": [""]
+}

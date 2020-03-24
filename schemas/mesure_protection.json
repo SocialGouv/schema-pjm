@@ -161,71 +161,11 @@
       }
     },
     {
-      "name": "nature_mesure",
-      "description": "Nature de la mesure de protection",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": [
-          "curatelle_simple",
-          "curatelle_renforcee",
-          "tutelle",
-          "sauvegarde_justice",
-          "maj",
-          "subroge_curateur",
-          "subroge_tuteur",
-          "mandat_protection_future",
-          "mesure_ad_hoc"
-        ]
-      }
-    },
-    {
-      "name": "champs_mesure",
-      "description": "Champs de la mesure de protection",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": [
-          "protection_bien",
-          "protection_personne",
-          "protection_bien_personne"
-        ]
-      }
-    },
-    {
-      "name": "lieu_vie",
-      "description": "Lieu de vie du majeur protégé",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": [
-          "domicile",
-          "etablissement",
-          "etablissement_conservation_domicile"
-        ]
-      }
-    },
-    {
       "name": "etablissement_finess",
       "description": "Si établissement, FINESS de l'établissement",
       "type": "string",
       "constraints": {
         "required": false
-      }
-    },
-    {
-      "name": "type_etablissement",
-      "description": "Si établissement",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": [
-          "etablissement_handicapes",
-          "etablissement_personne_agee",
-          "autre_etablissement_s_ms",
-          "etablissement_hospitalier",
-          "etablissement_psychiatrique"
-        ]
       }
     },
     {
