@@ -16,7 +16,6 @@
 |cause_sortie_mainlevee_detail|string|Causes de sortie de la mesure de protection, détail de la main levée||masp<br>maj|
 |tribunal_siret|string|Siret du tribunal ayant attribué la mesure de protection.<br>**donnée requise**|`^\d{14}$`||
 |tribunal_cabinet|string|Cabinet du tribunal ayant attribué la mesure de protection.|||
-|etablissement_finess|string|Si établissement, FINESS de l'établissement|||
 |niveau_ressource|integer|Niveau de ressource correspondant à l'assiette<br>**donnée requise**|||
 |prestations_sociales|array|Prestations sociales perçues<br>**donnée requise**||AAH<br>PCH<br>ASI<br>RSA<br>ALS<br>APL<br>ASPA<br>APA|
 |antenne_uuid|string|Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'|||

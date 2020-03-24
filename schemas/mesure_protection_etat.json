@@ -103,7 +103,16 @@
       "description": "Si établissement, SIRET de l'établissement",
       "type": "string",
       "constraints": {
-        "required": false
+        "required": false,
+        "pattern": "^\\d{14}$"
+      }
+    }
+  ],
+  "custom_checks": [
+    {
+      "name": "french-siret-value",
+      "params": {
+        "column": "tribunal_siret"
       }
     }
   ],
