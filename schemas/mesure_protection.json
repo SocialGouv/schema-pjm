@@ -37,8 +37,16 @@
       }
     },
     {
-      "name": "antenne_uuid",
-      "description": "Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'",
+      "name": "numero_rg",
+      "description": "Numéro répertoire général (RG)",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "numero_dossier",
+      "description": " Le numéro de dossier correspond à un numéro interne du mandataire",
       "type": "string",
       "constraints": {
         "required": false
@@ -104,6 +112,22 @@
       }
     },
     {
+      "name": "resultat_revision",
+      "description": "Résultat de la révision de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "mainlevee",
+          "masp",
+          "reduction",
+          "changement_mesure",
+          "transfert_famille",
+          "transfert_autre_mjpm"
+        ]
+      }
+    },
+    {
       "name": "cause_sortie",
       "description": "Causes de sortie de la mesure de protection",
       "type": "string",
@@ -122,22 +146,6 @@
       }
     },
     {
-      "name": "resultat_revision",
-      "description": "Résultat de la révision de la mesure de protection",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "enum": [
-          "mainlevee",
-          "masp",
-          "reduction",
-          "changement_mesure",
-          "transfert_famille",
-          "transfert_autre_mjpm"
-        ]
-      }
-    },
-    {
       "name": "tribunal_siret",
       "description": "Siret du tribunal ayant attribué la mesure de protection.",
       "type": "string",
@@ -149,22 +157,6 @@
     {
       "name": "tribunal_cabinet",
       "description": "Cabinet du tribunal ayant attribué la mesure de protection.",
-      "type": "string",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
-      "name": "numero_rg",
-      "description": "Numéro répertoire général (RG)",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "numero_dossier",
-      "description": "Numéro de dossier",
       "type": "string",
       "constraints": {
         "required": false
@@ -193,6 +185,14 @@
       "constraints": {
         "required": true,
         "enum": ["AAH", "PCH", "ASI", "RSA", "ALS", "APL", "ASPA", "APA"]
+      }
+    },
+    {
+      "name": "antenne_uuid",
+      "description": "Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'",
+      "type": "string",
+      "constraints": {
+        "required": false
       }
     }
   ],
