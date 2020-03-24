@@ -93,7 +93,7 @@
     },
     {
       "name": "date_revision",
-      "description": "Date de revision. Peut-etre égal à la de jugement ou ordonnance de nomination",
+      "description": "Date de revision. Peut-etre égal à la date de jugement ou ordonnance de nomination",
       "example": "01/02/2020",
       "type": "date",
       "format": "DD/MM/YYYY",
@@ -160,23 +160,6 @@
       "type": "string",
       "constraints": {
         "required": false
-      }
-    },
-    {
-      "name": "niveau_ressource",
-      "description": "Niveau de ressource correspondant à l'assiette",
-      "type": "integer",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "prestations_sociales",
-      "description": "Prestations sociales perçues",
-      "type": "array",
-      "constraints": {
-        "required": true,
-        "enum": ["AAH", "PCH", "ASI", "RSA", "ALS", "APL", "ASPA", "APA"]
       }
     },
     {

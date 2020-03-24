@@ -1,0 +1,58 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "title": "Mesure de protection",
+  "description": "Spécification des données d'un mandataire individuel",
+  "keywords": ["mesure", "protection"],
+  "countryCode": "FR",
+  "homepage": "https://github.com/SocialGouv/schema-pjm",
+  "path": "https://github.com/SocialGouv/schema-pjm/schemas/mesure_protection.json",
+  "licenses": [
+    {
+      "title": "Licence Ouverte",
+      "name": "etalab-2.0",
+      "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
+    }
+  ],
+  "resources": [],
+  "created": "2020-02-12",
+  "lastModified": "2020-02-12",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Thomas Glatt",
+      "email": "thomas.glatt@fabrique.social.gouv.fr",
+      "organisation": "Incubateur des ministères sociaux",
+      "role": "contributor"
+    }
+  ],
+  "author": "fabrique.social.gouv.fr",
+  "contact": "",
+  "fields": [
+    {
+      "name": "annee",
+      "description": "Année pour à laquelle correspond le niveau de ressource et de prestations sociales perçues",
+      "type": "date",
+      "format": "yyyy",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "niveau_ressource",
+      "description": "Niveau de ressource correspondant à l'assiette",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "prestations_sociales",
+      "description": "Liste des prestations sociales perçues",
+      "type": "array",
+      "constraints": {
+        "required": true,
+        "enum": ["AAH", "PCH", "ASI", "RSA", "ALS", "APL", "ASPA", "APA"]
+      }
+    }
+  ]
+}

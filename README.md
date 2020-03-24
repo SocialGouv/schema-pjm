@@ -25,3 +25,4 @@
 - [Service mandataire - information sur le personnel](./schemas/service_mandataire_info_personnel.md)
 - [Mesure de protection](./schemas/mesure_protection.md)
 - [Mesure de protection - états](./schemas/mesure_protection_etat.md)
+- [Mesure de protection - ressource](./schemas/mesure_protection_ressource.md)

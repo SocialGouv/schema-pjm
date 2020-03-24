@@ -10,6 +10,7 @@ generateMarkdown("./schemas/service_mandataire.json");
 generateMarkdown("./schemas/service_mandataire_info_personnel.json");
 generateMarkdown("./schemas/mesure_protection.json");
 generateMarkdown("./schemas/mesure_protection_etat.json");
+generateMarkdown("./schemas/mesure_protection_ressource.json");
 
 function generateMarkdown(jsonPath) {
   const logger = fs.createWriteStream(jsonPath.replace(".json", ".md"));
