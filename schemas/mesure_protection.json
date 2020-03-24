@@ -120,10 +120,9 @@
         "enum": [
           "mainlevee",
           "masp",
-          "reduction",
-          "changement_mesure",
-          "transfert_famille",
-          "transfert_autre_mjpm"
+          "reconduction",
+          "aggravation",
+          "allegement"
         ]
       }
     },
@@ -133,7 +132,14 @@
       "type": "string",
       "constraints": {
         "required": false,
-        "enum": ["mainlevee", "deces", "masp", "caducite"]
+        "enum": [
+          "mainlevee",
+          "deces",
+          "caducite",
+          "dessaisissement_famille",
+          "dessaisissement_autre_mjpm",
+          "masp"
+        ]
       }
     },
     {

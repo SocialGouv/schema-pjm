@@ -11,8 +11,8 @@
 |date_nomination|date|Date de jugement ou ordonnance de nomination *(example: 01/02/2020)*<br>**donnée requise**|||
 |date_revision|date|Date de revision. Peut-etre égal à la date de jugement ou ordonnance de nomination *(example: 01/02/2020)*|||
 |date_fin_mesure|date|Date de fin de la mesure de protection *(example: 01/02/2020)*|||
-|resultat_revision|string|Résultat de la révision de la mesure de protection||mainlevee<br>masp<br>reduction<br>changement_mesure<br>transfert_famille<br>transfert_autre_mjpm|
-|cause_sortie|string|Causes de sortie de la mesure de protection||mainlevee<br>deces<br>masp<br>caducite|
+|resultat_revision|string|Résultat de la révision de la mesure de protection||mainlevee<br>masp<br>reconduction<br>aggravation<br>allegement|
+|cause_sortie|string|Causes de sortie de la mesure de protection||mainlevee<br>deces<br>caducite<br>dessaisissement_famille<br>dessaisissement_autre_mjpm<br>masp|
 |cause_sortie_mainlevee_detail|string|Causes de sortie de la mesure de protection, détail de la main levée||masp<br>maj|
 |tribunal_siret|string|Siret du tribunal ayant attribué la mesure de protection.<br>**donnée requise**|`^\d{14}$`||
 |tribunal_cabinet|string|Cabinet du tribunal ayant attribué la mesure de protection.|||
