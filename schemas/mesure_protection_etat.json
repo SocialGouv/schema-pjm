@@ -97,6 +97,14 @@
           "etablissement_psychiatrique"
         ]
       }
+    },
+    {
+      "name": "etablissement_siret",
+      "description": "Si établissement, SIRET de l'établissement",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
     }
   ],
   "missingValues": [""]

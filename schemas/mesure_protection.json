@@ -163,14 +163,6 @@
       }
     },
     {
-      "name": "etablissement_finess",
-      "description": "Si établissement, FINESS de l'établissement",
-      "type": "string",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
       "name": "niveau_ressource",
       "description": "Niveau de ressource correspondant à l'assiette",
       "type": "integer",
