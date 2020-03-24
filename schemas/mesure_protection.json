@@ -64,13 +64,77 @@
       }
     },
     {
-      "name": "date_jugement",
-      "description": "Date de jugement de la mesure de protection",
+      "name": "date_premier_protection",
+      "description": "Date de la première mise sous protection juridique",
       "example": "01/02/2020",
       "type": "date",
       "format": "DD/MM/YYYY",
       "constraints": {
         "required": true
+      }
+    },
+    {
+      "name": "date_nomination",
+      "description": "Date de jugement ou ordonnance de nomination",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "date_revision",
+      "description": "Date de revision. Peut-etre égal à la de jugement ou ordonnance de nomination",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "date_fin_mesure",
+      "description": "Date de fin de la mesure de protection",
+      "example": "01/02/2020",
+      "type": "date",
+      "format": "DD/MM/YYYY",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "cause_sortie",
+      "description": "Causes de sortie de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": ["mainlevee", "deces", "masp", "caducite"]
+      }
+    },
+    {
+      "name": "cause_sortie_mainlevee_detail",
+      "description": "Causes de sortie de la mesure de protection, détail de la main levée",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": ["masp", "maj"]
+      }
+    },
+    {
+      "name": "resultat_revision",
+      "description": "Résultat de la révision de la mesure de protection",
+      "type": "string",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "mainlevee",
+          "masp",
+          "reduction",
+          "changement_mesure",
+          "transfert_famille",
+          "transfert_autre_mjpm"
+        ]
       }
     },
     {
@@ -104,60 +168,6 @@
       "type": "string",
       "constraints": {
         "required": false
-      }
-    },
-    {
-      "name": "date_revision",
-      "description": "Date de revision de la mesure de protection",
-      "example": "01/02/2020",
-      "type": "date",
-      "format": "DD/MM/YYYY",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
-      "name": "resultat_revision",
-      "description": "Résultat de la révision de la mesure de protection",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "enum": [
-          "mainlevee",
-          "masp",
-          "reduction",
-          "changement_mesure",
-          "transfert_famille",
-          "transfert_autre_mjpm"
-        ]
-      }
-    },
-    {
-      "name": "date_fin_mesure",
-      "description": "Date de fin de la mesure de protection",
-      "example": "01/02/2020",
-      "type": "date",
-      "format": "DD/MM/YYYY",
-      "constraints": {
-        "required": false
-      }
-    },
-    {
-      "name": "cause_sortie",
-      "description": "Causes de sortie de la mesure de protection",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "enum": ["mainlevee", "deces", "masp", "caducite"]
-      }
-    },
-    {
-      "name": "cause_sortie_mainlevee_detail",
-      "description": "Causes de sortie de la mesure de protection, détail de la main levée",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "enum": ["masp", "maj"]
       }
     },
     {
