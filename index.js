@@ -60,7 +60,7 @@ function generateMarkdown(jsonPath) {
         descriptionCell + `<br>**min: ${minimum}**, **max: ${maximum}**`;
     }
 
-    let formatCell = pattern ? `\`${pattern}\`` : "";
+    const formatCell = pattern ? `\`${pattern}\`` : "";
 
     const enumCell = enumValues ? enumValues.join("<br>") : "";
 
