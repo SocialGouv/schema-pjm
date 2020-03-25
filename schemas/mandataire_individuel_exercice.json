@@ -98,7 +98,7 @@
       }
     },
     {
-      "name": "cumul_prepose_etp",
+      "name": "cumul_delegue_service_etp",
       "description": "Si cumul en tant que délégué d'une service mandataire, ETP consacré au cumul",
       "type": "string",
       "constraints": {
