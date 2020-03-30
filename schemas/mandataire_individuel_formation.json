@@ -31,7 +31,7 @@
     {
       "name": "cnc_mjpm_annee_obtention",
       "description": "Année d'obtention du CNC MJPM",
-      "example": "22/08/1988",
+      "example": "1988",
       "type": "date",
       "format": "DD/MM/YYYY",
       "constraints": {
@@ -94,7 +94,7 @@
     },
     {
       "name": "niveau_qualification_secretaire_spe",
-      "description": "Niveau de qualification du secrétaire spécialisé",
+      "description": "Niveau de qualification du secretariat spécialisé",
       "type": "integer",
       "constraints": {
         "required": false,

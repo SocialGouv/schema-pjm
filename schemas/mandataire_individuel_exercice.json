@@ -44,26 +44,19 @@
       }
     },
     {
-      "name": "secretaire_specialise",
-      "description": "Exerce avec un secrétaire spécialisé",
+      "name": "secretariat_specialise",
+      "description": "Exerce avec un secretariat spécialisé",
       "type": "boolean",
       "constraints": {
         "required": true
       }
     },
     {
-      "name": "secretaire_specialise_etp",
-      "description": "Estimation de l'activité en ETP du secrétaire spécialisé",
-      "type": "string",
+      "name": "secretariat_specialise_etp",
+      "description": "Estimation de l'activité en ETP du secretariat spécialisé",
+      "type": "number",
       "constraints": {
-        "required": false,
-        "enum": [
-          "inf_30",
-          "sup_30__inf_50",
-          "sup_50__inf_70",
-          "sup_70__inf_90",
-          "temps_plein"
-        ]
+        "required": false
       }
     },
     {
