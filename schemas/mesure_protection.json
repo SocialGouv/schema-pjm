@@ -119,10 +119,11 @@
         "required": false,
         "enum": [
           "mainlevee",
-          "masp",
           "reconduction",
           "aggravation",
-          "allegement"
+          "allegement",
+          "dessaisissement_famille",
+          "dessaisissement_autre_mjpm"
         ]
       }
     },
@@ -137,8 +138,7 @@
           "deces",
           "caducite",
           "dessaisissement_famille",
-          "dessaisissement_autre_mjpm",
-          "masp"
+          "dessaisissement_autre_mjpm"
         ]
       }
     },
