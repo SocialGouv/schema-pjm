@@ -1,5 +1,32 @@
 ## Schéma de données
 
+### Mesure de protection
+
+**Règles**
+
+- Une mesure de protection est identifié par un `uuid`.
+- Le `uuid` est retourné par l'API d'eMJPM en retour d'une création de mesure de protection
+- Le `uuid` est associé à une mesure de protection et un mandataire
+- Une mesure de protection a une liste d'états. Au sein d'une mesure de protection, un état est identifié par la date de début de cet état.
+- Une mesure de protection a une liste de ressources. Au sein d'une mesure de protection, une resource est identifiée par l'année correspondante aux informations au 31/12.
+
+**Tables**
+
+- [Mesure de protection](./schemas/mesure_protection.md)
+- [Mesure de protection - états](./schemas/mesure_protection_etat.md)
+- [Mesure de protection - ressource](./schemas/mesure_protection_ressource.md)
+
+**Données de référence**
+- [Causes de sortie](./datas/cause-sortie.csv)
+- [Champs de la mesure](./datas/champs-mesure.csv)
+- [Lieux d'exercice d'un MJPM](./datas/lieu-exercice-mjpm.csv)
+- [Lieux de vie d'un majeur](./datas/lieu-vie-majeur.csv)
+- [Natures d'une mesure](./datas/nature-mesure.csv)
+- [Prestations sociales](./datas/prestation-sociale.csv)
+- [Résultats d'une révision d'une mesure](./datas/resultat-revision-mesure.csv)
+- [Types d'établissement](./datas/type-etablissement.csv)
+
+
 ### Mandataire individuel
 
 **Tables**
@@ -25,20 +52,4 @@
 - [Fédérations des services mandataires](./datas/federation-service.csv)
 - [Organismes gestionnaires](./datas/organisme-gestionnaire.csv)
 
-### Mesure de protection
 
-**Tables**
-
-- [Mesure de protection](./schemas/mesure_protection.md)
-- [Mesure de protection - états](./schemas/mesure_protection_etat.md)
-- [Mesure de protection - ressource](./schemas/mesure_protection_ressource.md)
-
-**Données de référence**
-- [Causes de sortie](./datas/cause-sortie.csv)
-- [Champs de la mesure](./datas/champs-mesure.csv)
-- [Lieux d'exercice d'un MJPM](./datas/lieu-exercice-mjpm.csv)
-- [Lieux de vie d'un majeur](./datas/lieu-vie-majeur.csv)
-- [Natures d'une mesure](./datas/nature-mesure.csv)
-- [Prestations sociales](./datas/prestation-sociale.csv)
-- [Résultats d'une révision d'une mesure](./datas/resultat-revision-mesure.csv)
-- [Types d'établissement](./datas/type-etablissement.csv)
