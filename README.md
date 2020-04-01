@@ -4,7 +4,7 @@
 
 **Règles**
 
-- Une mesure de protection est identifié par un `uuid`.
+- Une mesure de protection est identifiée par un `uuid`.
 - Le `uuid` est retourné par l'API d'eMJPM en retour d'une création de mesure de protection
 - Le `uuid` est associé à une mesure de protection et un mandataire
 - Une mesure de protection a une liste d'états. Au sein d'une mesure de protection, un état est identifié par la date de début de cet état.
