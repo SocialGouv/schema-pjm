@@ -69,17 +69,11 @@
     },
     {
       "name": "cumul_prepose_etp",
-      "description": "Si cumul en tant que préposé, ETP consacré au cumul",
+      "description": "Si cumul en tant que préposé, ETP consacré au cumul (en %)",
       "type": "string",
       "constraints": {
         "required": false,
-        "enum": [
-          "inf_30",
-          "sup_30__inf_50",
-          "sup_50__inf_70",
-          "sup_70__inf_90",
-          "temps_plein"
-        ]
+        "enum": ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"]
       }
     },
     {
@@ -92,17 +86,11 @@
     },
     {
       "name": "cumul_delegue_service_etp",
-      "description": "Si cumul en tant que délégué d'une service mandataire, ETP consacré au cumul",
+      "description": "Si cumul en tant que délégué d'une service mandataire, ETP consacré au cumul (en %)",
       "type": "string",
       "constraints": {
         "required": false,
-        "enum": [
-          "inf_30",
-          "sup_30__inf_50",
-          "sup_50__inf_70",
-          "sup_70__inf_90",
-          "temps_plein"
-        ]
+        "enum": ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"]
       }
     }
   ],
