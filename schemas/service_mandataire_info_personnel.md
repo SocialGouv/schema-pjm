@@ -2,7 +2,7 @@
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
-|annee|integer|Année correspondante aux informations transmises *(example: 2019)*<br>**donnée requise**|`^\d{4}$`||
+|annee|integer|Année correspondante aux informations transmises *(exemple: 2019)*<br>**donnée requise**|`^\d{4}$`||
 |nombre_postes_delegues_etp|integer|Nombre de postes de délégués en ETP au 31/12<br>**donnée requise**|||
 |nombre_delegues|integer|Nombre de délégués au 31/12<br>**donnée requise**|||
 |nombre_poste_autre_personnel_etp|integer|Nombre de postes autres personnels en ETP au 31/12<br>**donnée requise**|||

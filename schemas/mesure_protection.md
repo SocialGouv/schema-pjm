@@ -5,12 +5,12 @@
 |uuid|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
 |numero_rg|string|Numéro répertoire général (RG)<br>**donnée requise**|||
 |numero_dossier|string| Le numéro de dossier correspond à un numéro interne du mandataire|||
-|date_naissance|date|Date de naissance du majeur protégé *(example: 22/05/1938)*<br>**donnée requise**|||
+|date_naissance|date|Date de naissance du majeur protégé *(exemple: 22/05/1938)*<br>**donnée requise**|||
 |civilite|string|Civilité du majeur protégé<br>**donnée requise**||madame<br>monsieur|
-|date_premier_protection|date|Date de la première mise sous protection juridique *(example: 01/02/2020)*<br>**donnée requise**|||
-|date_nomination|date|Date de jugement ou ordonnance de nomination *(example: 01/02/2020)*<br>**donnée requise**|||
-|date_revision|date|Date de revision. Peut-etre égal à la date de jugement ou ordonnance de nomination *(example: 01/02/2020)*|||
-|date_fin_mesure|date|Date de fin de la mesure de protection *(example: 01/02/2020)*|||
+|date_premier_protection|date|Date de la première mise sous protection juridique *(exemple: 01/02/2020)*<br>**donnée requise**|||
+|date_nomination|date|Date de jugement ou ordonnance de nomination *(exemple: 01/02/2020)*<br>**donnée requise**|||
+|date_revision|date|Date de revision. Peut-etre égal à la date de jugement ou ordonnance de nomination *(exemple: 01/02/2020)*|||
+|date_fin_mesure|date|Date de fin de la mesure de protection *(exemple: 01/02/2020)*|||
 |resultat_revision|string|Résultat de la révision de la mesure de protection||mainlevee<br>reconduction<br>aggravation<br>allegement<br>dessaisissement_famille<br>dessaisissement_autre_mjpm|
 |cause_sortie|string|Causes de sortie de la mesure de protection||mainlevee<br>deces<br>caducite<br>dessaisissement_famille<br>dessaisissement_autre_mjpm|
 |cause_sortie_mainlevee_detail|string|Causes de sortie de la mesure de protection, détail de la main levée||masp<br>maj|

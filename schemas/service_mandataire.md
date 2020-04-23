@@ -2,15 +2,15 @@
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
-|num_siret|string|Numéro SIRET du service mandataire (14 chiffres). *(example: 80295478500028)*<br>**donnée requise**|`^\d{14}$`||
-|nom_service|string|Nom du service mandataire *(example: ATPFO 75)*<br>**donnée requise**|||
-|adresse|string|L'adresse du siège social du service mandataire *(example: 14 Avenue Duquesne)*<br>**donnée requise**|||
-|code_postal|string|Code postal du siège social du service mandataire *(example: 75350)*<br>**donnée requise**|`^\d{5}$`||
-|ville|string|Ville du siège social du service mandataire *(example: Paris)*|||
-|telephone|string|Numéro de téléphone du siège social du service mandataire *(example: 01 40 56 60 00)*<br>**donnée requise**|`^\0d{1} d{2} d{2} d{2} d{2}$`||
-|email|string|Email du service mandataire *(example: mandataire@monmail.com)*<br>**donnée requise**|||
-|responsable_service|string|Personne habilitée à représenter le service mandataire *(example: Victoria Dupont)*<br>**donnée requise**|||
-|annee_creation|integer|Année de création du service mandataire *(example: 2009)*<br>**donnée requise**<br>**min: 1950**, **max: 2020**|||
+|num_siret|string|Numéro SIRET du service mandataire (14 chiffres). *(exemple: 80295478500028)*<br>**donnée requise**|`^\d{14}$`||
+|nom_service|string|Nom du service mandataire *(exemple: ATPFO 75)*<br>**donnée requise**|||
+|adresse|string|L'adresse du siège social du service mandataire *(exemple: 14 Avenue Duquesne)*<br>**donnée requise**|||
+|code_postal|string|Code postal du siège social du service mandataire *(exemple: 75350)*<br>**donnée requise**|`^\d{5}$`||
+|ville|string|Ville du siège social du service mandataire *(exemple: Paris)*|||
+|telephone|string|Numéro de téléphone du siège social du service mandataire *(exemple: 01 40 56 60 00)*<br>**donnée requise**|`^\0d{1} d{2} d{2} d{2} d{2}$`||
+|email|string|Email du service mandataire *(exemple: mandataire@monmail.com)*<br>**donnée requise**|||
+|responsable_service|string|Personne habilitée à représenter le service mandataire *(exemple: Victoria Dupont)*<br>**donnée requise**|||
+|annee_creation|integer|Année de création du service mandataire *(exemple: 2009)*<br>**donnée requise**<br>**min: 1950**, **max: 2020**|||
 |convention_collective|string|Convention Nationale Collective de Travail<br>**donnée requise**||CC66<br>CCN51<br>autre<br>aucune|
 |organisme_gestionnaire|string|Type d'organisme gestionnaire<br>**donnée requise**||association<br>ccas<br>organisme_securite_sociale|
 |affiliation_federation|boolean|Affiliation à une fédération<br>**donnée requise**|||
