@@ -72,13 +72,13 @@
       }
     },
     {
-      "name": "date_premier_protection",
+      "name": "date_premier_mesure",
       "description": "Date de la première mise sous protection juridique",
       "example": "01/02/2020",
       "type": "date",
       "format": "DD/MM/YYYY",
       "constraints": {
-        "required": true
+        "required": false
       }
     },
     {
@@ -92,8 +92,8 @@
       }
     },
     {
-      "name": "date_revision",
-      "description": "Date de revision. Peut-etre égal à la date de jugement ou ordonnance de nomination",
+      "name": "date_protection_en_cours",
+      "description": "Date de la protection en cours",
       "example": "01/02/2020",
       "type": "date",
       "format": "DD/MM/YYYY",
@@ -140,15 +140,6 @@
           "dessaisissement_famille",
           "dessaisissement_autre_mjpm"
         ]
-      }
-    },
-    {
-      "name": "cause_sortie_mainlevee_detail",
-      "description": "Causes de sortie de la mesure de protection, détail de la main levée",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "enum": ["masp", "maj"]
       }
     },
     {

@@ -39,7 +39,7 @@
     },
     {
       "name": "niveau_ressource",
-      "description": "Niveau de ressource correspondant à l'assiette",
+      "description": "montant global correspondant à l'assiette",
       "type": "integer",
       "constraints": {
         "required": true

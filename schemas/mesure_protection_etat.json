@@ -29,8 +29,8 @@
   "contact": "",
   "fields": [
     {
-      "name": "date",
-      "description": "Date de début de la protection",
+      "name": "date_changement_etat",
+      "description": "Date de changement d'état de la protection",
       "example": "01/02/2020",
       "type": "date",
       "format": "DD/MM/YYYY",
