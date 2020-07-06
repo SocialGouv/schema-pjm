@@ -84,6 +84,22 @@
       }
     },
     {
+      "name": "code_postal",
+      "description": "Code postal du lieu de vie du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ville",
+      "description": "Ville du lieu de vie du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
       "name": "type_etablissement",
       "description": "Si établissement",
       "type": "string",
