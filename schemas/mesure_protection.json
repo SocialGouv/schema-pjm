@@ -29,7 +29,7 @@
   "contact": "",
   "fields": [
     {
-      "name": "uuid",
+      "name": "id",
       "description": "Identifiant unique emjpm de la mesure de protection",
       "type": "string",
       "constraints": {
@@ -55,9 +55,9 @@
     {
       "name": "date_naissance",
       "description": "Date de naissance du majeur protégé",
-      "example": "22/05/1938",
-      "type": "date",
-      "format": "DD/MM/YYYY",
+      "example": "1938",
+      "type": "integer",
+      "format": "YYYY",
       "constraints": {
         "required": true
       }
@@ -160,7 +160,7 @@
       }
     },
     {
-      "name": "antenne_uuid",
+      "name": "antenne_id",
       "description": "Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'",
       "type": "string",
       "constraints": {
