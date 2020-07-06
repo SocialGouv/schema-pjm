@@ -85,6 +85,14 @@
     },
     {
       "name": "code_postal",
+      "description": "Code pays (ISO 3166-1 alpha-2) du lieu de vie du majeur protégé",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "code_postal",
       "description": "Code postal du lieu de vie du majeur protégé",
       "type": "string",
       "constraints": {
