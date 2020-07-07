@@ -71,7 +71,7 @@
     {
       "name": "civilite",
       "description": "Civilité du mandataire individuel",
-      "example": "H",
+      "example": "monsieur",
       "type": "string",
       "constraints": {
         "required": true,
