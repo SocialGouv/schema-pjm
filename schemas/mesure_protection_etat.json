@@ -58,8 +58,8 @@
       }
     },
     {
-      "name": "champs_mesure",
-      "description": "Champs de la mesure de protection",
+      "name": "champ_mesure",
+      "description": "Champ de la mesure de protection",
       "type": "string",
       "constraints": {
         "required": true,

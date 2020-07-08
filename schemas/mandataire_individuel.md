@@ -6,7 +6,7 @@
 |lieu_exercice|string|Lieu d'exercice du mandataire individuelle *(exemple: EARL)*<br>**donnée requise**||domicile<br>cabinet<br>cabinet_partage|
 |forme_juridique|string|Forme juridique de la société du mandataire individuel *(exemple: EARL)*<br>**donnée requise**||EARL<br>EI<br>EIRL<br>EURL<br>SARL<br>SA<br>SAS,<br>SASU|
 |email|string|Email du mandataire individuel *(exemple: mandataire@monmail.com)*<br>**donnée requise**|||
-|civilite|string|Civilité du mandataire individuel *(exemple: H)*<br>**donnée requise**||madame<br>monsieur|
+|civilite|string|Civilité du mandataire individuel *(exemple: monsieur)*<br>**donnée requise**||madame<br>monsieur|
 |nom_naissance|string|Nom de naissance du mandataire individuel *(exemple: Dupont)*<br>**donnée requise**|||
 |nom_usage|string|Nom d'usage du mandataire individuel *(exemple: Dupont)*<br>**donnée requise**|||
 |date_naissance|date|Date de naissance du mandataire judiciaire *(exemple: 22/05/1938)*<br>**donnée requise**|||
