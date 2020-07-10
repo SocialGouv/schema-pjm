@@ -5,7 +5,7 @@
 |id|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
 |numero_rg|string|Numéro répertoire général (RG)<br>**donnée requise**|||
 |numero_dossier|string| Le numéro de dossier correspond à un numéro interne du mandataire|||
-|date_naissance|integer|Date de naissance du majeur protégé *(exemple: 1938)*<br>**donnée requise**|||
+|annee_naissance|integer|Date de naissance du majeur protégé *(exemple: 1938)*<br>**donnée requise**|||
 |civilite|string|Civilité du majeur protégé<br>**donnée requise**||madame<br>monsieur|
 |date_premier_mesure|date|Date de la première mise sous protection juridique *(exemple: 01/02/2020)*|||
 |date_nomination|date|Date de jugement ou ordonnance de nomination *(exemple: 01/02/2020)*<br>**donnée requise**|||

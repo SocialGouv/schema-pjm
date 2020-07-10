@@ -53,11 +53,10 @@
       }
     },
     {
-      "name": "date_naissance",
+      "name": "annee_naissance",
       "description": "Date de naissance du majeur protégé",
       "example": "1938",
       "type": "integer",
-      "format": "YYYY",
       "constraints": {
         "required": true
       }
