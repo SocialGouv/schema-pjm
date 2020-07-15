@@ -99,9 +99,9 @@
     {
       "name": "date_naissance",
       "description": "Date de naissance du mandataire judiciaire",
-      "example": "22/05/1938",
+      "example": "1976-05-22",
       "type": "date",
-      "format": "DD/MM/YYYY",
+      "format": "yyyy-MM-dd",
       "constraints": {
         "required": true
       }

@@ -31,9 +31,9 @@
     {
       "name": "date_changement_etat",
       "description": "Date de changement d'état de la protection",
-      "example": "01/02/2020",
+      "example": "2020-02-01",
       "type": "date",
-      "format": "DD/MM/YYYY",
+      "format": "yyyy-MM-dd",
       "constraints": {
         "required": true
       }

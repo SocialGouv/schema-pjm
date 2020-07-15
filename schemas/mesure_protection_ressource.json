@@ -31,8 +31,8 @@
     {
       "name": "annee",
       "description": "Année pour à laquelle correspond le niveau de ressource et de prestations sociales perçues",
-      "type": "date",
-      "format": "yyyy",
+      "example": "2019",
+      "type": "integer",
       "constraints": {
         "required": false
       }

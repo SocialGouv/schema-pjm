@@ -32,8 +32,7 @@
       "name": "cnc_mjpm_annee_obtention",
       "description": "Année d'obtention du CNC MJPM",
       "example": "1988",
-      "type": "date",
-      "format": "DD/MM/YYYY",
+      "type": "integer",
       "constraints": {
         "required": false
       }
@@ -49,9 +48,8 @@
     {
       "name": "cnc_maj_annee_obtention",
       "description": "Année d'obtention du CNC MAJ",
-      "example": "22/08/1988",
-      "type": "date",
-      "format": "DD/MM/YYYY",
+      "example": "1988",
+      "type": "integer",
       "constraints": {
         "required": false
       }
@@ -67,9 +65,8 @@
     {
       "name": "cnc_dpf_annee_obtention",
       "description": "Année d'obtention du CNC DPF",
-      "example": "22/08/1988",
-      "type": "date",
-      "format": "DD/MM/YYYY",
+      "example": "1988",
+      "type": "integer",
       "constraints": {
         "required": false
       }

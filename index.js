@@ -34,6 +34,7 @@ function generateMarkdown(jsonPath) {
     const name = field.name;
     const description = field.description;
     const example = field.example;
+    const format = field.format;
     const type = field.type;
     const constraints = field.constraints;
     const required = constraints.required;
@@ -60,7 +61,12 @@ function generateMarkdown(jsonPath) {
         descriptionCell + `<br>**min: ${minimum}**, **max: ${maximum}**`;
     }
 
-    const formatCell = pattern ? `\`${pattern}\`` : "";
+    let formatCell = "";
+    if (pattern) {
+      formatCell = `\`${pattern}\``;
+    } else if (format) {
+      formatCell = `\`${format}\``;
+    }
 
     const enumCell = enumValues ? enumValues.join("<br>") : "";
 
