@@ -118,7 +118,8 @@
           "etablissement_personne_agee",
           "autre_etablissement_s_ms",
           "etablissement_hospitalier",
-          "etablissement_psychiatrique"
+          "etablissement_psychiatrique",
+          "autre_etablissement"
         ]
       }
     },
