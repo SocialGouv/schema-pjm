@@ -31,7 +31,7 @@
     {
       "name": "id",
       "description": "Identifiant unique emjpm de la mesure de protection",
-      "type": "string",
+      "type": "integer",
       "constraints": {
         "required": true
       }
@@ -161,7 +161,7 @@
     {
       "name": "antenne_id",
       "description": "Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'",
-      "type": "string",
+      "type": "integer",
       "constraints": {
         "required": false
       }

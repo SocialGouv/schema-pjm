@@ -2,7 +2,7 @@
 
 |nom|type|description|format|enum|
 |-|-|-|-|-|
-|id|string|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
+|id|integer|Identifiant unique emjpm de la mesure de protection<br>**donnée requise**|||
 |numero_rg|string|Numéro répertoire général (RG)<br>**donnée requise**|||
 |numero_dossier|string| Le numéro de dossier correspond à un numéro interne du mandataire|||
 |annee_naissance|integer|Date de naissance du majeur protégé *(exemple: 1938)*<br>**donnée requise**|||
@@ -15,4 +15,4 @@
 |cause_sortie|string|Causes de sortie de la mesure de protection||mainlevee<br>deces<br>caducite<br>dessaisissement_famille<br>dessaisissement_autre_mjpm|
 |tribunal_siret|string|Siret du tribunal ayant attribué la mesure de protection.<br>**donnée requise**|`^\d{14}$`||
 |tribunal_cabinet|string|Cabinet du tribunal ayant attribué la mesure de protection.|||
-|antenne_id|string|Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'|||
+|antenne_id|integer|Dans le cas d'un service mandataire, identifiant unique emjpm de l'antenne'|||
