@@ -79,7 +79,8 @@
         "enum": [
           "domicile",
           "etablissement",
-          "etablissement_conservation_domicile"
+          "etablissement_conservation_domicile",
+          "sdf"
         ]
       }
     },
