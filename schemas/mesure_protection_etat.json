@@ -122,15 +122,6 @@
           "autre_etablissement"
         ]
       }
-    },
-    {
-      "name": "etablissement_siret",
-      "description": "Si établissement, SIRET de l'établissement",
-      "type": "string",
-      "constraints": {
-        "required": false,
-        "pattern": "^\\d{14}$"
-      }
     }
   ],
   "custom_checks": [

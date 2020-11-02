@@ -10,4 +10,3 @@
 |code_postal|string|Code postal du lieu de vie du majeur protégé<br>**donnée requise**|||
 |ville|string|Ville du lieu de vie du majeur protégé<br>**donnée requise**|||
 |type_etablissement|string|Si établissement<br>**donnée requise**||etablissement_handicapes<br>etablissement_personne_agee<br>autre_etablissement_s_ms<br>etablissement_hospitalier<br>etablissement_psychiatrique<br>autre_etablissement|
-|etablissement_siret|string|Si établissement, SIRET de l'établissement|`^\d{14}$`||
